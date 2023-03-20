@@ -1,0 +1,41 @@
+<?php return array(
+    'root' => array(
+        'name' => 'douggonsouza/gentelela',
+        'pretty_version' => 'dev-main',
+        'version' => 'dev-main',
+        'reference' => '54ee0693af2c9d3fde4e89596f827772ad63a1f0',
+        'type' => 'library',
+        'install_path' => __DIR__ . '/../../',
+        'aliases' => array(),
+        'dev' => true,
+    ),
+    'versions' => array(
+        'douggonsouza/gentelela' => array(
+            'pretty_version' => 'dev-main',
+            'version' => 'dev-main',
+            'reference' => '54ee0693af2c9d3fde4e89596f827772ad63a1f0',
+            'type' => 'library',
+            'install_path' => __DIR__ . '/../../',
+            'aliases' => array(),
+            'dev_requirement' => false,
+        ),
+        'douggonsouza/permission' => array(
+            'pretty_version' => 'v1.0.4',
+            'version' => '1.0.4.0',
+            'reference' => 'c1a1237213662dcf9bbd73f5972438218640a524',
+            'type' => 'library',
+            'install_path' => __DIR__ . '/../douggonsouza/permission',
+            'aliases' => array(),
+            'dev_requirement' => false,
+        ),
+        'douggonsouza/propertys' => array(
+            'pretty_version' => 'v1.0.5',
+            'version' => '1.0.5.0',
+            'reference' => 'c3199eea7030e6b867e58e87b438c669f25256a3',
+            'type' => 'library',
+            'install_path' => __DIR__ . '/../douggonsouza/propertys',
+            'aliases' => array(),
+            'dev_requirement' => false,
+        ),
+    ),
+);

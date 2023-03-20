@@ -1,0 +1,86 @@
+{
+    "packages": [
+        {
+            "name": "douggonsouza/permission",
+            "version": "v1.0.4",
+            "version_normalized": "1.0.4.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/douggonsouza/permission.git",
+                "reference": "c1a1237213662dcf9bbd73f5972438218640a524"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/douggonsouza/permission/zipball/c1a1237213662dcf9bbd73f5972438218640a524",
+                "reference": "c1a1237213662dcf9bbd73f5972438218640a524",
+                "shasum": ""
+            },
+            "time": "2023-03-10T11:27:21+00:00",
+            "type": "library",
+            "installation-source": "dist",
+            "autoload": {
+                "psr-4": {
+                    "douggonsouza\\permission\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Dougla G. de Souza",
+                    "email": "douggonsouza@gmail.com"
+                }
+            ],
+            "description": "Coleção de permissões para papeis de usuários",
+            "support": {
+                "issues": "https://github.com/douggonsouza/permission/issues",
+                "source": "https://github.com/douggonsouza/permission/tree/v1.0.4"
+            },
+            "install-path": "../douggonsouza/permission"
+        },
+        {
+            "name": "douggonsouza/propertys",
+            "version": "v1.0.5",
+            "version_normalized": "1.0.5.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/douggonsouza/propertys.git",
+                "reference": "c3199eea7030e6b867e58e87b438c669f25256a3"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/douggonsouza/propertys/zipball/c3199eea7030e6b867e58e87b438c669f25256a3",
+                "reference": "c3199eea7030e6b867e58e87b438c669f25256a3",
+                "shasum": ""
+            },
+            "time": "2023-03-18T16:53:12+00:00",
+            "type": "library",
+            "installation-source": "dist",
+            "autoload": {
+                "psr-4": {
+                    "douggonsouza\\propertys\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Douglas Gonçalves de Souza",
+                    "email": "douggonsouza@gmail.com"
+                }
+            ],
+            "description": "Armazenagem das propriedades",
+            "support": {
+                "issues": "https://github.com/douggonsouza/propertys/issues",
+                "source": "https://github.com/douggonsouza/propertys/tree/v1.0.5"
+            },
+            "install-path": "../douggonsouza/propertys"
+        }
+    ],
+    "dev": true,
+    "dev-package-names": []
+}
