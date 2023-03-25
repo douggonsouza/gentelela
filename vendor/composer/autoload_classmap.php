@@ -15,6 +15,8 @@ return array(
     'douggonsouza\\gentelela\\benchmarckInterface' => $baseDir . '/src/benchmarckInterface.php',
     'douggonsouza\\gentelela\\blocks\\blocks' => $baseDir . '/src/blocks/blocks.php',
     'douggonsouza\\gentelela\\identify' => $baseDir . '/src/identify.php',
+    'douggonsouza\\language\\language' => $vendorDir . '/douggonsouza/language/src/language.php',
+    'douggonsouza\\language\\languageInterface' => $vendorDir . '/douggonsouza/language/src/languageInterface.php',
     'douggonsouza\\permission\\controls\\menus' => $vendorDir . '/douggonsouza/permission/src/controls/menus.php',
     'douggonsouza\\permission\\controls\\papers' => $vendorDir . '/douggonsouza/permission/src/controls/papers.php',
     'douggonsouza\\permission\\controls\\permissions' => $vendorDir . '/douggonsouza/permission/src/controls/permissions.php',

@@ -8,5 +8,6 @@ $baseDir = dirname($vendorDir);
 return array(
     'douggonsouza\\propertys\\' => array($vendorDir . '/douggonsouza/propertys/src'),
     'douggonsouza\\permission\\' => array($vendorDir . '/douggonsouza/permission/src'),
+    'douggonsouza\\language\\' => array($vendorDir . '/douggonsouza/language/src'),
     'douggonsouza\\gentelela\\' => array($baseDir . '/src'),
 );

@@ -1,6 +1,46 @@
 {
     "packages": [
         {
+            "name": "douggonsouza/language",
+            "version": "v1.0.5",
+            "version_normalized": "1.0.5.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/douggonsouza/language.git",
+                "reference": "a2a4e0e37bf7c342a7a480fda2b7609fdcbc8856"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/douggonsouza/language/zipball/a2a4e0e37bf7c342a7a480fda2b7609fdcbc8856",
+                "reference": "a2a4e0e37bf7c342a7a480fda2b7609fdcbc8856",
+                "shasum": ""
+            },
+            "time": "2023-02-21T23:10:12+00:00",
+            "type": "library",
+            "installation-source": "dist",
+            "autoload": {
+                "psr-4": {
+                    "douggonsouza\\language\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Douglas Gonçalves de Souza",
+                    "email": "douggonsouza@gmail.com"
+                }
+            ],
+            "description": "Expõe o valor da etiqueta para uma linguagem",
+            "support": {
+                "issues": "https://github.com/douggonsouza/language/issues",
+                "source": "https://github.com/douggonsouza/language/tree/v1.0.5"
+            },
+            "install-path": "../douggonsouza/language"
+        },
+        {
             "name": "douggonsouza/permission",
             "version": "v1.0.4",
             "version_normalized": "1.0.4.0",

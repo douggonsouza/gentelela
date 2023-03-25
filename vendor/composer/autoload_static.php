@@ -11,6 +11,7 @@ class ComposerStaticInit174f4cea62571bd2affc3a54a21e306d
         array (
             'douggonsouza\\propertys\\' => 23,
             'douggonsouza\\permission\\' => 24,
+            'douggonsouza\\language\\' => 22,
             'douggonsouza\\gentelela\\' => 23,
         ),
     );
@@ -23,6 +24,10 @@ class ComposerStaticInit174f4cea62571bd2affc3a54a21e306d
         'douggonsouza\\permission\\' => 
         array (
             0 => __DIR__ . '/..' . '/douggonsouza/permission/src',
+        ),
+        'douggonsouza\\language\\' => 
+        array (
+            0 => __DIR__ . '/..' . '/douggonsouza/language/src',
         ),
         'douggonsouza\\gentelela\\' => 
         array (
@@ -40,6 +45,8 @@ class ComposerStaticInit174f4cea62571bd2affc3a54a21e306d
         'douggonsouza\\gentelela\\benchmarckInterface' => __DIR__ . '/../..' . '/src/benchmarckInterface.php',
         'douggonsouza\\gentelela\\blocks\\blocks' => __DIR__ . '/../..' . '/src/blocks/blocks.php',
         'douggonsouza\\gentelela\\identify' => __DIR__ . '/../..' . '/src/identify.php',
+        'douggonsouza\\language\\language' => __DIR__ . '/..' . '/douggonsouza/language/src/language.php',
+        'douggonsouza\\language\\languageInterface' => __DIR__ . '/..' . '/douggonsouza/language/src/languageInterface.php',
         'douggonsouza\\permission\\controls\\menus' => __DIR__ . '/..' . '/douggonsouza/permission/src/controls/menus.php',
         'douggonsouza\\permission\\controls\\papers' => __DIR__ . '/..' . '/douggonsouza/permission/src/controls/papers.php',
         'douggonsouza\\permission\\controls\\permissions' => __DIR__ . '/..' . '/douggonsouza/permission/src/controls/permissions.php',
