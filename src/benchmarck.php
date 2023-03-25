@@ -1,16 +1,16 @@
 <?php
 
-namespace douggonsouza\benchmarck;
+namespace douggonsouza\gentelela;
 
-use douggonsouza\benchmarck\behaviorInterface;
-use douggonsouza\benchmarck\benchmarckInterface;
+use douggonsouza\gentelela\behaviorInterface;
+use douggonsouza\gentelela\benchmarckInterface;
 use douggonsouza\propertys\propertysInterface;
-use douggonsouza\benchmarck\assets\assets;
-use douggonsouza\benchmarck\blocks\blocks;
-use douggonsouza\benchmarck\layouts\layouts;
+use douggonsouza\gentelela\assets\assets;
+use douggonsouza\gentelela\blocks\blocks;
+use douggonsouza\gentelela\layouts\layouts;
 use douggonsouza\language\languageInterface;
-use douggonsouza\benchmarck\alerts;
-use douggonsouza\benchmarck\alertsInterface;
+use douggonsouza\gentelela\alerts;
+use douggonsouza\gentelela\alertsInterface;
 
 final class benchmarck implements benchmarckInterface
 {

@@ -1,8 +1,8 @@
 <?php
 
-namespace douggonsouza\benchmarck\blocks;
+namespace douggonsouza\gentelela\blocks;
 
-use douggonsouza\benchmarck\behaviorInterface;
+use douggonsouza\gentelela\behaviorInterface;
 
 class blocks implements behaviorInterface
 {

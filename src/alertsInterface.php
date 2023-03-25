@@ -1,6 +1,6 @@
 <?php
 
-namespace douggonsouza\benchmarck;
+namespace douggonsouza\gentelela;
 
 interface alertsInterface
 {

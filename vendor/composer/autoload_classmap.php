@@ -7,6 +7,14 @@ $baseDir = dirname($vendorDir);
 
 return array(
     'Composer\\InstalledVersions' => $vendorDir . '/composer/InstalledVersions.php',
+    'douggonsouza\\gentelela\\alerts' => $baseDir . '/src/alerts.php',
+    'douggonsouza\\gentelela\\alertsInterface' => $baseDir . '/src/alertsInterface.php',
+    'douggonsouza\\gentelela\\assets\\assets' => $baseDir . '/src/assets/assets.php',
+    'douggonsouza\\gentelela\\behaviorInterface' => $baseDir . '/src/behaviorInterface.php',
+    'douggonsouza\\gentelela\\benchmarck' => $baseDir . '/src/benchmarck.php',
+    'douggonsouza\\gentelela\\benchmarckInterface' => $baseDir . '/src/benchmarckInterface.php',
+    'douggonsouza\\gentelela\\blocks\\blocks' => $baseDir . '/src/blocks/blocks.php',
+    'douggonsouza\\gentelela\\identify' => $baseDir . '/src/identify.php',
     'douggonsouza\\permission\\controls\\menus' => $vendorDir . '/douggonsouza/permission/src/controls/menus.php',
     'douggonsouza\\permission\\controls\\papers' => $vendorDir . '/douggonsouza/permission/src/controls/papers.php',
     'douggonsouza\\permission\\controls\\permissions' => $vendorDir . '/douggonsouza/permission/src/controls/permissions.php',

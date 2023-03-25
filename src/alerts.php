@@ -1,8 +1,8 @@
 <?php
 
-namespace douggonsouza\benchmarck;
+namespace douggonsouza\gentelela;
 
-use douggonsouza\benchmarck\alertsInterface;
+use douggonsouza\gentelela\alertsInterface;
 
 class alerts implements alertsInterface
 {

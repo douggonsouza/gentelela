@@ -1,8 +1,8 @@
 <?php
 
-namespace douggonsouza\benchmarck;
+namespace douggonsouza\gentelela;
 
-use douggonsouza\benchmarck\behaviorInterface;
+use douggonsouza\gentelela\behaviorInterface;
 
 class identify implements behaviorInterface
 {

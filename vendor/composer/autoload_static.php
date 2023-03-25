@@ -32,6 +32,14 @@ class ComposerStaticInit174f4cea62571bd2affc3a54a21e306d
 
     public static $classMap = array (
         'Composer\\InstalledVersions' => __DIR__ . '/..' . '/composer/InstalledVersions.php',
+        'douggonsouza\\gentelela\\alerts' => __DIR__ . '/../..' . '/src/alerts.php',
+        'douggonsouza\\gentelela\\alertsInterface' => __DIR__ . '/../..' . '/src/alertsInterface.php',
+        'douggonsouza\\gentelela\\assets\\assets' => __DIR__ . '/../..' . '/src/assets/assets.php',
+        'douggonsouza\\gentelela\\behaviorInterface' => __DIR__ . '/../..' . '/src/behaviorInterface.php',
+        'douggonsouza\\gentelela\\benchmarck' => __DIR__ . '/../..' . '/src/benchmarck.php',
+        'douggonsouza\\gentelela\\benchmarckInterface' => __DIR__ . '/../..' . '/src/benchmarckInterface.php',
+        'douggonsouza\\gentelela\\blocks\\blocks' => __DIR__ . '/../..' . '/src/blocks/blocks.php',
+        'douggonsouza\\gentelela\\identify' => __DIR__ . '/../..' . '/src/identify.php',
         'douggonsouza\\permission\\controls\\menus' => __DIR__ . '/..' . '/douggonsouza/permission/src/controls/menus.php',
         'douggonsouza\\permission\\controls\\papers' => __DIR__ . '/..' . '/douggonsouza/permission/src/controls/papers.php',
         'douggonsouza\\permission\\controls\\permissions' => __DIR__ . '/..' . '/douggonsouza/permission/src/controls/permissions.php',

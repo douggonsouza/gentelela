@@ -1,8 +1,8 @@
 <?php
 
-namespace douggonsouza\benchmarck\assets;
+namespace douggonsouza\gentelela\assets;
 
-use douggonsouza\benchmarck\behaviorInterface;
+use douggonsouza\gentelela\behaviorInterface;
 
 class assets implements behaviorInterface
 {
