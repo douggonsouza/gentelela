@@ -1,3 +1,6 @@
+<?php 
+    use douggonsouza\routes\router;
+?>
 <!DOCTYPE html>
 <html lang="pt-br">
   <head>
@@ -17,22 +20,58 @@
     <!-- DISCOVERY START BLOCK : LAYOUT_2_CSS -->
 
     <!-- Bootstrap -->
-    <link href="../vendors/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="<?= router::assets("/gentelela/vendors/bootstrap/dist/css/bootstrap.min.css", assets::ABSOLUTE_URL) ?>" rel="stylesheet">
     <!-- Font Awesome -->
-    <link href="../vendors/font-awesome/css/font-awesome.min.css" rel="stylesheet">
+    <link href="<?= router::assets("/gentelela/vendors/font-awesome/css/font-awesome.min.css", assets::ABSOLUTE_URL) ?>" rel="stylesheet">
     <!-- NProgress -->
-    <link href="../vendors/nprogress/nprogress.css" rel="stylesheet">
+    <link href="<?= router::assets("/gentelela/vendors/nprogress/nprogress.css", assets::ABSOLUTE_URL) ?>" rel="stylesheet">
     <!-- bootstrap-daterangepicker -->
-    <link href="../vendors/bootstrap-daterangepicker/daterangepicker.css" rel="stylesheet">
+    <link href="<?= router::assets("/gentelela/vendors/bootstrap-daterangepicker/daterangepicker.css", assets::ABSOLUTE_URL) ?>" rel="stylesheet">
 
     <!-- Custom Theme Style -->
-    <link href="../build/css/custom.min.css" rel="stylesheet">
+    <link href="<?= router::assets("/gentelela/build/css/custom.min.css", assets::ABSOLUTE_URL) ?>" rel="stylesheet">
 
     <!-- DISCOVERY END BLOCK -->
 
   </head>
 
   <body class="nav-md">
+
+    <!-- DISCOVERY START BLOCK : LAYOUT_2_JS -->
+
+    <!-- jQuery -->
+    <script src="<?= router::assets("/gentelela/vendors/jquery/dist/jquery.min.js", assets::ABSOLUTE_URL) ?>" ></script>
+    <!-- Bootstrap -->
+   <script src="<?= router::assets("/gentelela/vendors/bootstrap/dist/js/bootstrap.bundle.min.js", assets::ABSOLUTE_URL) ?>" ></script>
+    <!-- FastClick -->
+    <script src="<?= router::assets("/gentelela/vendors/fastclick/lib/fastclick.js", assets::ABSOLUTE_URL) ?>" ></script>
+    <!-- NProgress -->
+    <script src="<?= router::assets("/gentelela/vendors/nprogress/nprogress.js", assets::ABSOLUTE_URL) ?>" ></script>
+    <!-- Chart.js -->
+    <script src="<?= router::assets("/gentelela/vendors/Chart.js/dist/Chart.min.js", assets::ABSOLUTE_URL) ?>" ></script>
+    <!-- jQuery Sparklines -->
+    <script src="<?= router::assets("/gentelela/vendors/jquery-sparkline/dist/jquery.sparkline.min.js", assets::ABSOLUTE_URL) ?>" ></script>
+    <!-- Flot -->
+    <script src="<?= router::assets("/gentelela/vendors/Flot/jquery.flot.js", assets::ABSOLUTE_URL) ?>" ></script>
+    <script src="<?= router::assets("/gentelela/vendors/Flot/jquery.flot.pie.js", assets::ABSOLUTE_URL) ?>" ></script>
+    <script src="<?= router::assets("/gentelela/vendors/Flot/jquery.flot.time.js", assets::ABSOLUTE_URL) ?>" ></script>
+    <script src="<?= router::assets("/gentelela/vendors/Flot/jquery.flot.stack.js", assets::ABSOLUTE_URL) ?>" ></script>
+    <script src="<?= router::assets("/gentelela/vendors/Flot/jquery.flot.resize.js", assets::ABSOLUTE_URL) ?>" ></script>
+    <!-- Flot plugins -->
+    <script src="<?= router::assets("/gentelela/vendors/flot.orderbars/js/jquery.flot.orderBars.js", assets::ABSOLUTE_URL) ?>" ></script>
+    <script src="<?= router::assets("/gentelela/vendors/flot-spline/js/jquery.flot.spline.min.js", assets::ABSOLUTE_URL) ?>" ></script>
+    <script src="<?= router::assets("/gentelela/vendors/flot.curvedlines/curvedLines.js", assets::ABSOLUTE_URL) ?>" ></script>
+    <!-- DateJS -->
+    <script src="<?= router::assets("/gentelela/vendors/DateJS/build/date.js", assets::ABSOLUTE_URL) ?>" ></script>
+    <!-- bootstrap-daterangepicker -->
+    <script src="<?= router::assets("/gentelela/vendors/moment/min/moment.min.js", assets::ABSOLUTE_URL) ?>" ></script>
+    <script src="<?= router::assets("/gentelela/vendors/bootstrap-daterangepicker/daterangepicker.js", assets::ABSOLUTE_URL) ?>" ></script>
+    
+    <!-- Custom Theme Scripts -->
+    <script src="<?= router::assets("/gentelela/build/js/custom.min.js", assets::ABSOLUTE_URL) ?>" ></script>
+
+    <!-- DISCOVERY END BLOCK -->
+    
     <div class="container body">
       <div class="main_container">
         <div class="col-md-3 left_col">
@@ -49,7 +88,7 @@
               <!-- DISCOVERY START BLOCK : LAYOUT_2_PROFILE -->
 
               <div class="profile_pic">
-                <img src="images/img.jpg" alt="..." class="img-circle profile_img">
+                <img src="<?= router::assets("/gentelela/images/img.jpg", assets::ABSOLUTE_URL) ?> alt="<?= router::label('image'); ?>" class="img-circle profile_img">
               </div>
               <div class="profile_info">
                 <span>Welcome,</span>
@@ -148,18 +187,18 @@
                   </li>
                   <li><a><i class="fa fa-sitemap"></i> Multilevel Menu <span class="fa fa-chevron-down"></span></a>
                     <ul class="nav child_menu">
-                        <li><a href="#level1_1">Level One</a>
+                        <li><a href="<?= router::label('#'); ?>level1_1">Level One</a>
                         <li><a>Level One<span class="fa fa-chevron-down"></span></a>
                           <ul class="nav child_menu">
                             <li class="sub_menu"><a href="level2.html">Level Two</a>
                             </li>
-                            <li><a href="#level2_1">Level Two</a>
+                            <li><a href="<?= router::label('#'); ?>level2_1">Level Two</a>
                             </li>
-                            <li><a href="#level2_2">Level Two</a>
+                            <li><a href="<?= router::label('#'); ?>level2_2">Level Two</a>
                             </li>
                           </ul>
                         </li>
-                        <li><a href="#level1_2">Level One</a>
+                        <li><a href="<?= router::label('#'); ?>level1_2">Level One</a>
                         </li>
                     </ul>
                   </li>                  
@@ -210,7 +249,7 @@
                 <ul class=" navbar-right">
                   <li class="nav-item dropdown open" style="padding-left: 15px;">
                     <a href="javascript:;" class="user-profile dropdown-toggle" aria-haspopup="true" id="navbarDropdown" data-toggle="dropdown" aria-expanded="false">
-                      <img src="images/img.jpg" alt="">John Doe
+                      <img src="<?= router::assets("/gentelela/images/img.jpg", assets::ABSOLUTE_URL) ?> alt="">John Doe
                     </a>
                     <div class="dropdown-menu dropdown-usermenu pull-right" aria-labelledby="navbarDropdown">
                       <a class="dropdown-item"  href="javascript:;"> Profile</a>
@@ -231,7 +270,7 @@
                     <ul class="dropdown-menu list-unstyled msg_list" role="menu" aria-labelledby="navbarDropdown1">
                       <li class="nav-item">
                         <a class="dropdown-item">
-                          <span class="image"><img src="images/img.jpg" alt="Profile Image" /></span>
+                          <span class="image"><img src="<?= router::assets("/gentelela/images/img.jpg", assets::ABSOLUTE_URL) ?> alt="Profile Image" /></span>
                           <span>
                             <span>John Smith</span>
                             <span class="time">3 mins ago</span>
@@ -243,7 +282,7 @@
                       </li>
                       <li class="nav-item">
                         <a class="dropdown-item">
-                          <span class="image"><img src="images/img.jpg" alt="Profile Image" /></span>
+                          <span class="image"><img src="<?= router::assets("/gentelela/images/img.jpg", assets::ABSOLUTE_URL) ?> alt="Profile Image" /></span>
                           <span>
                             <span>John Smith</span>
                             <span class="time">3 mins ago</span>
@@ -255,7 +294,7 @@
                       </li>
                       <li class="nav-item">
                         <a class="dropdown-item">
-                          <span class="image"><img src="images/img.jpg" alt="Profile Image" /></span>
+                          <span class="image"><img src="<?= router::assets("/gentelela/images/img.jpg", assets::ABSOLUTE_URL) ?> alt="Profile Image" /></span>
                           <span>
                             <span>John Smith</span>
                             <span class="time">3 mins ago</span>
@@ -267,7 +306,7 @@
                       </li>
                       <li class="nav-item">
                         <a class="dropdown-item">
-                          <span class="image"><img src="images/img.jpg" alt="Profile Image" /></span>
+                          <span class="image"><img src="<?= router::assets("/gentelela/images/img.jpg", assets::ABSOLUTE_URL) ?> alt="Profile Image" /></span>
                           <span>
                             <span>John Smith</span>
                             <span class="time">3 mins ago</span>
@@ -391,10 +430,10 @@
                             <li><a class="collapse-link"><i class="fa fa-chevron-up"></i></a>
                             </li>
                             <li class="dropdown">
-                              <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false"><i class="fa fa-wrench"></i></a>
+                              <a href="<?= router::label('#'); ?>" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false"><i class="fa fa-wrench"></i></a>
                               <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
-                                  <a class="dropdown-item" href="#">Settings 1</a>
-                                  <a class="dropdown-item" href="#">Settings 2</a>
+                                  <a class="dropdown-item" href="<?= router::label('#'); ?>">Settings 1</a>
+                                  <a class="dropdown-item" href="<?= router::label('#'); ?>">Settings 2</a>
                                 </div>
                             </li>
                             <li><a class="close-link"><i class="fa fa-close"></i></a>
@@ -408,7 +447,7 @@
                               <i class="fa fa-user aero"></i>
                             </a>
                             <div class="media-body">
-                              <a class="title" href="#">Ms. Mary Jane</a>
+                              <a class="title" href="<?= router::label('#'); ?>">Ms. Mary Jane</a>
                               <p><strong>$2300. </strong> Agent Avarage Sales </p>
                               <p> <small>12 Sales Today</small>
                               </p>
@@ -419,7 +458,7 @@
                               <i class="fa fa-user green"></i>
                             </a>
                             <div class="media-body">
-                              <a class="title" href="#">Ms. Mary Jane</a>
+                              <a class="title" href="<?= router::label('#'); ?>">Ms. Mary Jane</a>
                               <p><strong>$2300. </strong> Agent Avarage Sales </p>
                               <p> <small>12 Sales Today</small>
                               </p>
@@ -430,7 +469,7 @@
                               <i class="fa fa-user blue"></i>
                             </a>
                             <div class="media-body">
-                              <a class="title" href="#">Ms. Mary Jane</a>
+                              <a class="title" href="<?= router::label('#'); ?>">Ms. Mary Jane</a>
                               <p><strong>$2300. </strong> Agent Avarage Sales </p>
                               <p> <small>12 Sales Today</small>
                               </p>
@@ -441,7 +480,7 @@
                               <i class="fa fa-user aero"></i>
                             </a>
                             <div class="media-body">
-                              <a class="title" href="#">Ms. Mary Jane</a>
+                              <a class="title" href="<?= router::label('#'); ?>">Ms. Mary Jane</a>
                               <p><strong>$2300. </strong> Agent Avarage Sales </p>
                               <p> <small>12 Sales Today</small>
                               </p>
@@ -452,7 +491,7 @@
                               <i class="fa fa-user green"></i>
                             </a>
                             <div class="media-body">
-                              <a class="title" href="#">Ms. Mary Jane</a>
+                              <a class="title" href="<?= router::label('#'); ?>">Ms. Mary Jane</a>
                               <p><strong>$2300. </strong> Agent Avarage Sales </p>
                               <p> <small>12 Sales Today</small>
                               </p>
@@ -478,10 +517,10 @@
                       <li><a class="collapse-link"><i class="fa fa-chevron-up"></i></a>
                       </li>
                       <li class="dropdown">
-                        <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false"><i class="fa fa-wrench"></i></a>
+                        <a href="<?= router::label('#'); ?>" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false"><i class="fa fa-wrench"></i></a>
                         <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
-                            <a class="dropdown-item" href="#">Settings 1</a>
-                            <a class="dropdown-item" href="#">Settings 2</a>
+                            <a class="dropdown-item" href="<?= router::label('#'); ?>">Settings 1</a>
+                            <a class="dropdown-item" href="<?= router::label('#'); ?>">Settings 2</a>
                           </div>
                       </li>
                       <li><a class="close-link"><i class="fa fa-close"></i></a>
@@ -532,10 +571,10 @@
                       <li><a class="collapse-link"><i class="fa fa-chevron-up"></i></a>
                       </li>
                       <li class="dropdown">
-                        <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false"><i class="fa fa-wrench"></i></a>
+                        <a href="<?= router::label('#'); ?>" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false"><i class="fa fa-wrench"></i></a>
                         <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
-                            <a class="dropdown-item" href="#">Settings 1</a>
-                            <a class="dropdown-item" href="#">Settings 2</a>
+                            <a class="dropdown-item" href="<?= router::label('#'); ?>">Settings 1</a>
+                            <a class="dropdown-item" href="<?= router::label('#'); ?>">Settings 2</a>
                           </div>
                       </li>
                       <li><a class="close-link"><i class="fa fa-close"></i></a>
@@ -550,7 +589,7 @@
                         <p class="day">23</p>
                       </a>
                       <div class="media-body">
-                        <a class="title" href="#">Item One Title</a>
+                        <a class="title" href="<?= router::label('#'); ?>">Item One Title</a>
                         <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
                       </div>
                     </article>
@@ -560,7 +599,7 @@
                         <p class="day">23</p>
                       </a>
                       <div class="media-body">
-                        <a class="title" href="#">Item Two Title</a>
+                        <a class="title" href="<?= router::label('#'); ?>">Item Two Title</a>
                         <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
                       </div>
                     </article>
@@ -570,7 +609,7 @@
                         <p class="day">23</p>
                       </a>
                       <div class="media-body">
-                        <a class="title" href="#">Item Two Title</a>
+                        <a class="title" href="<?= router::label('#'); ?>">Item Two Title</a>
                         <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
                       </div>
                     </article>
@@ -580,7 +619,7 @@
                         <p class="day">23</p>
                       </a>
                       <div class="media-body">
-                        <a class="title" href="#">Item Two Title</a>
+                        <a class="title" href="<?= router::label('#'); ?>">Item Two Title</a>
                         <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
                       </div>
                     </article>
@@ -590,7 +629,7 @@
                         <p class="day">23</p>
                       </a>
                       <div class="media-body">
-                        <a class="title" href="#">Item Three Title</a>
+                        <a class="title" href="<?= router::label('#'); ?>">Item Three Title</a>
                         <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
                       </div>
                     </article>
@@ -606,10 +645,10 @@
                       <li><a class="collapse-link"><i class="fa fa-chevron-up"></i></a>
                       </li>
                       <li class="dropdown">
-                        <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false"><i class="fa fa-wrench"></i></a>
+                        <a href="<?= router::label('#'); ?>" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false"><i class="fa fa-wrench"></i></a>
                         <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
-                            <a class="dropdown-item" href="#">Settings 1</a>
-                            <a class="dropdown-item" href="#">Settings 2</a>
+                            <a class="dropdown-item" href="<?= router::label('#'); ?>">Settings 1</a>
+                            <a class="dropdown-item" href="<?= router::label('#'); ?>">Settings 2</a>
                           </div>
                       </li>
                       <li><a class="close-link"><i class="fa fa-close"></i></a>
@@ -624,7 +663,7 @@
                         <p class="day">23</p>
                       </a>
                       <div class="media-body">
-                        <a class="title" href="#">Item One Title</a>
+                        <a class="title" href="<?= router::label('#'); ?>">Item One Title</a>
                         <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
                       </div>
                     </article>
@@ -634,7 +673,7 @@
                         <p class="day">23</p>
                       </a>
                       <div class="media-body">
-                        <a class="title" href="#">Item Two Title</a>
+                        <a class="title" href="<?= router::label('#'); ?>">Item Two Title</a>
                         <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
                       </div>
                     </article>
@@ -644,7 +683,7 @@
                         <p class="day">23</p>
                       </a>
                       <div class="media-body">
-                        <a class="title" href="#">Item Two Title</a>
+                        <a class="title" href="<?= router::label('#'); ?>">Item Two Title</a>
                         <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
                       </div>
                     </article>
@@ -654,7 +693,7 @@
                         <p class="day">23</p>
                       </a>
                       <div class="media-body">
-                        <a class="title" href="#">Item Two Title</a>
+                        <a class="title" href="<?= router::label('#'); ?>">Item Two Title</a>
                         <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
                       </div>
                     </article>
@@ -664,7 +703,7 @@
                         <p class="day">23</p>
                       </a>
                       <div class="media-body">
-                        <a class="title" href="#">Item Three Title</a>
+                        <a class="title" href="<?= router::label('#'); ?>">Item Three Title</a>
                         <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
                       </div>
                     </article>
@@ -680,10 +719,10 @@
                       <li><a class="collapse-link"><i class="fa fa-chevron-up"></i></a>
                       </li>
                       <li class="dropdown">
-                        <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false"><i class="fa fa-wrench"></i></a>
+                        <a href="<?= router::label('#'); ?>" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false"><i class="fa fa-wrench"></i></a>
                         <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
-                            <a class="dropdown-item" href="#">Settings 1</a>
-                            <a class="dropdown-item" href="#">Settings 2</a>
+                            <a class="dropdown-item" href="<?= router::label('#'); ?>">Settings 1</a>
+                            <a class="dropdown-item" href="<?= router::label('#'); ?>">Settings 2</a>
                           </div>
                       </li>
                       <li><a class="close-link"><i class="fa fa-close"></i></a>
@@ -698,7 +737,7 @@
                         <p class="day">23</p>
                       </a>
                       <div class="media-body">
-                        <a class="title" href="#">Item One Title</a>
+                        <a class="title" href="<?= router::label('#'); ?>">Item One Title</a>
                         <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
                       </div>
                     </article>
@@ -708,7 +747,7 @@
                         <p class="day">23</p>
                       </a>
                       <div class="media-body">
-                        <a class="title" href="#">Item Two Title</a>
+                        <a class="title" href="<?= router::label('#'); ?>">Item Two Title</a>
                         <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
                       </div>
                     </article>
@@ -718,7 +757,7 @@
                         <p class="day">23</p>
                       </a>
                       <div class="media-body">
-                        <a class="title" href="#">Item Two Title</a>
+                        <a class="title" href="<?= router::label('#'); ?>">Item Two Title</a>
                         <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
                       </div>
                     </article>
@@ -728,7 +767,7 @@
                         <p class="day">23</p>
                       </a>
                       <div class="media-body">
-                        <a class="title" href="#">Item Two Title</a>
+                        <a class="title" href="<?= router::label('#'); ?>">Item Two Title</a>
                         <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
                       </div>
                     </article>
@@ -738,7 +777,7 @@
                         <p class="day">23</p>
                       </a>
                       <div class="media-body">
-                        <a class="title" href="#">Item Three Title</a>
+                        <a class="title" href="<?= router::label('#'); ?>">Item Three Title</a>
                         <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
                       </div>
                     </article>
@@ -759,7 +798,7 @@
           <!-- DISCOVERY START BLOCK : LAYOUT_2_FOOTER -->
 
           <div class="pull-right">
-            Gentelella - Bootstrap Admin Template by <a href="https://colorlib.com">Colorlib</a>
+            Gentelella - Bootstrap Admin Template by <a href="<?= router::label('#'); ?>"">Colorlib</a>
           </div>
           <div class="clearfix"></div>
 
@@ -769,41 +808,6 @@
         <!-- /footer content -->
       </div>
     </div>
-
-    <!-- DISCOVERY START BLOCK : LAYOUT_2_JS -->
-
-    <!-- jQuery -->
-    <script src="../vendors/jquery/dist/jquery.min.js"></script>
-    <!-- Bootstrap -->
-   <script src="../vendors/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
-    <!-- FastClick -->
-    <script src="../vendors/fastclick/lib/fastclick.js"></script>
-    <!-- NProgress -->
-    <script src="../vendors/nprogress/nprogress.js"></script>
-    <!-- Chart.js -->
-    <script src="../vendors/Chart.js/dist/Chart.min.js"></script>
-    <!-- jQuery Sparklines -->
-    <script src="../vendors/jquery-sparkline/dist/jquery.sparkline.min.js"></script>
-    <!-- Flot -->
-    <script src="../vendors/Flot/jquery.flot.js"></script>
-    <script src="../vendors/Flot/jquery.flot.pie.js"></script>
-    <script src="../vendors/Flot/jquery.flot.time.js"></script>
-    <script src="../vendors/Flot/jquery.flot.stack.js"></script>
-    <script src="../vendors/Flot/jquery.flot.resize.js"></script>
-    <!-- Flot plugins -->
-    <script src="../vendors/flot.orderbars/js/jquery.flot.orderBars.js"></script>
-    <script src="../vendors/flot-spline/js/jquery.flot.spline.min.js"></script>
-    <script src="../vendors/flot.curvedlines/curvedLines.js"></script>
-    <!-- DateJS -->
-    <script src="../vendors/DateJS/build/date.js"></script>
-    <!-- bootstrap-daterangepicker -->
-    <script src="../vendors/moment/min/moment.min.js"></script>
-    <script src="../vendors/bootstrap-daterangepicker/daterangepicker.js"></script>
-    
-    <!-- Custom Theme Scripts -->
-    <script src="../build/js/custom.min.js"></script>
-
-    <!-- DISCOVERY END BLOCK -->
 
   </body>
 </html>

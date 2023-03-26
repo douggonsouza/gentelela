@@ -1,3 +1,6 @@
+<?php 
+    use douggonsouza\routes\router;
+?>
 <!DOCTYPE html>
 <html lang="pt-br">
 
@@ -18,24 +21,69 @@
     <!-- DISCOVERY START BLOCK : LAYOUT_3_CSS -->
 
     <!-- Bootstrap -->
-    <link href="../vendors/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="<?= router::assets("/gentelela/vendors/bootstrap/dist/css/bootstrap.min.css", assets::ABSOLUTE_URL) ?>" rel="stylesheet">
     <!-- Font Awesome -->
-    <link href="../vendors/font-awesome/css/font-awesome.min.css" rel="stylesheet">
+    <link href="<?= router::assets("/gentelela/vendors/font-awesome/css/font-awesome.min.css", assets::ABSOLUTE_URL) ?>" rel="stylesheet">
     <!-- NProgress -->
-    <link href="../vendors/nprogress/nprogress.css" rel="stylesheet">
+    <link href="<?= router::assets("/gentelela/vendors/nprogress/nprogress.css", assets::ABSOLUTE_URL) ?>" rel="stylesheet">
     <!-- bootstrap-progressbar -->
-    <link href="../vendors/bootstrap-progressbar/css/bootstrap-progressbar-3.3.4.min.css" rel="stylesheet">
+    <link href="<?= router::assets("/gentelela/vendors/bootstrap-progressbar/css/bootstrap-progressbar-3.3.4.min.css", assets::ABSOLUTE_URL) ?>" rel="stylesheet">
     <!-- bootstrap-daterangepicker -->
-    <link href="../vendors/bootstrap-daterangepicker/daterangepicker.css" rel="stylesheet">
+    <link href="<?= router::assets("/gentelela/vendors/bootstrap-daterangepicker/daterangepicker.css", assets::ABSOLUTE_URL) ?>" rel="stylesheet">
     
     <!-- Custom Theme Style -->
-    <link href="../build/css/custom.min.css" rel="stylesheet">
+    <link href="<?= router::assets("/gentelela/build/css/custom.min.css", assets::ABSOLUTE_URL) ?>" rel="stylesheet">
 
     <!-- DISCOVERY END BLOCK -->
 
   </head>
 
   <body class="nav-md">
+
+    <!-- DISCOVERY START BLOCK : LAYOUT_3_JS -->
+
+    <!-- jQuery -->
+    <script src="<?= router::assets("/gentelela/vendors/jquery/dist/jquery.min.js", assets::ABSOLUTE_URL) ?>" ></script>
+    <!-- Bootstrap -->
+   <script src="<?= router::assets("/gentelela/vendors/bootstrap/dist/js/bootstrap.bundle.min.js", assets::ABSOLUTE_URL) ?>" ></script>
+    <!-- FastClick -->
+    <script src="<?= router::assets("/gentelela/vendors/fastclick/lib/fastclick.js", assets::ABSOLUTE_URL) ?>" ></script>
+    <!-- NProgress -->
+    <script src="<?= router::assets("/gentelela/vendors/nprogress/nprogress.js", assets::ABSOLUTE_URL) ?>" ></script>
+    <!-- Chart.js -->
+    <script src="<?= router::assets("/gentelela/vendors/Chart.js/dist/Chart.min.js", assets::ABSOLUTE_URL) ?>" ></script>
+    <!-- jQuery Sparklines -->
+    <script src="<?= router::assets("/gentelela/vendors/jquery-sparkline/dist/jquery.sparkline.min.js", assets::ABSOLUTE_URL) ?>" ></script>
+    <!-- morris.js -->
+    <script src="<?= router::assets("/gentelela/vendors/raphael/raphael.min.js", assets::ABSOLUTE_URL) ?>" ></script>
+    <script src="<?= router::assets("/gentelela/vendors/morris.js/morris.min.js", assets::ABSOLUTE_URL) ?>" ></script>
+    <!-- gauge.js -->
+    <script src="<?= router::assets("/gentelela/vendors/gauge.js/dist/gauge.min.js", assets::ABSOLUTE_URL) ?>" ></script>
+    <!-- bootstrap-progressbar -->
+    <script src="<?= router::assets("/gentelela/vendors/bootstrap-progressbar/bootstrap-progressbar.min.js", assets::ABSOLUTE_URL) ?>" ></script>
+    <!-- Skycons -->
+    <script src="<?= router::assets("/gentelela/vendors/skycons/skycons.js", assets::ABSOLUTE_URL) ?>" ></script>
+    <!-- Flot -->
+    <script src="<?= router::assets("/gentelela/vendors/Flot/jquery.flot.js", assets::ABSOLUTE_URL) ?>" ></script>
+    <script src="<?= router::assets("/gentelela/vendors/Flot/jquery.flot.pie.js", assets::ABSOLUTE_URL) ?>" ></script>
+    <script src="<?= router::assets("/gentelela/vendors/Flot/jquery.flot.time.js", assets::ABSOLUTE_URL) ?>" ></script>
+    <script src="<?= router::assets("/gentelela/vendors/Flot/jquery.flot.stack.js", assets::ABSOLUTE_URL) ?>" ></script>
+    <script src="<?= router::assets("/gentelela/vendors/Flot/jquery.flot.resize.js", assets::ABSOLUTE_URL) ?>" ></script>
+    <!-- Flot plugins -->
+    <script src="<?= router::assets("/gentelela/vendors/flot.orderbars/js/jquery.flot.orderBars.js", assets::ABSOLUTE_URL) ?>" ></script>
+    <script src="<?= router::assets("/gentelela/vendors/flot-spline/js/jquery.flot.spline.min.js", assets::ABSOLUTE_URL) ?>" ></script>
+    <script src="<?= router::assets("/gentelela/vendors/flot.curvedlines/curvedLines.js", assets::ABSOLUTE_URL) ?>" ></script>
+    <!-- DateJS -->
+    <script src="<?= router::assets("/gentelela/vendors/DateJS/build/date.js", assets::ABSOLUTE_URL) ?>" ></script>
+    <!-- bootstrap-daterangepicker -->
+    <script src="<?= router::assets("/gentelela/vendors/moment/min/moment.min.js", assets::ABSOLUTE_URL) ?>" ></script>
+    <script src="<?= router::assets("/gentelela/vendors/bootstrap-daterangepicker/daterangepicker.js", assets::ABSOLUTE_URL) ?>" ></script>
+
+    <!-- Custom Theme Scripts -->
+    <script src="<?= router::assets("/gentelela/build/js/custom.min.js", assets::ABSOLUTE_URL) ?>" ></script>
+
+    <!-- DISCOVERY END BLOCK -->
+    
     <div class="container body">
       <div class="main_container">
         <div class="col-md-3 left_col">
@@ -55,7 +103,7 @@
               <!-- DISCOVERY START BLOCK : LAYOUT_3_PROFILE -->
 
               <div class="profile_pic">
-                <img src="images/img.jpg" alt="..." class="img-circle profile_img">
+                <img src="<?= router::assets("/gentelela/images/img.jpg", assets::ABSOLUTE_URL) ?> alt="<?= router::label('image'); ?>" class="img-circle profile_img">
               </div>
               <div class="profile_info">
                 <span>Welcome,</span>
@@ -154,18 +202,18 @@
                   </li>
                   <li><a><i class="fa fa-sitemap"></i> Multilevel Menu <span class="fa fa-chevron-down"></span></a>
                     <ul class="nav child_menu">
-                        <li><a href="#level1_1">Level One</a>
+                        <li><a href="<?= router::label('#'); ?>level1_1">Level One</a>
                         <li><a>Level One<span class="fa fa-chevron-down"></span></a>
                           <ul class="nav child_menu">
                             <li class="sub_menu"><a href="level2.html">Level Two</a>
                             </li>
-                            <li><a href="#level2_1">Level Two</a>
+                            <li><a href="<?= router::label('#'); ?>level2_1">Level Two</a>
                             </li>
-                            <li><a href="#level2_2">Level Two</a>
+                            <li><a href="<?= router::label('#'); ?>level2_2">Level Two</a>
                             </li>
                           </ul>
                         </li>
-                        <li><a href="#level1_2">Level One</a>
+                        <li><a href="<?= router::label('#'); ?>level1_2">Level One</a>
                         </li>
                     </ul>
                   </li>                  
@@ -219,7 +267,7 @@
                 <ul class=" navbar-right">
                   <li class="nav-item dropdown open" style="padding-left: 15px;">
                     <a href="javascript:;" class="user-profile dropdown-toggle" aria-haspopup="true" id="navbarDropdown" data-toggle="dropdown" aria-expanded="false">
-                      <img src="images/img.jpg" alt="">John Doe
+                      <img src="<?= router::assets("/gentelela/images/img.jpg", assets::ABSOLUTE_URL) ?> alt="">John Doe
                     </a>
                     <div class="dropdown-menu dropdown-usermenu pull-right" aria-labelledby="navbarDropdown">
                       <a class="dropdown-item"  href="javascript:;"> Profile</a>
@@ -240,7 +288,7 @@
                     <ul class="dropdown-menu list-unstyled msg_list" role="menu" aria-labelledby="navbarDropdown1">
                       <li class="nav-item">
                         <a class="dropdown-item">
-                          <span class="image"><img src="images/img.jpg" alt="Profile Image" /></span>
+                          <span class="image"><img src="<?= router::assets("/gentelela/images/img.jpg", assets::ABSOLUTE_URL) ?> alt="Profile Image" /></span>
                           <span>
                             <span>John Smith</span>
                             <span class="time">3 mins ago</span>
@@ -252,7 +300,7 @@
                       </li>
                       <li class="nav-item">
                         <a class="dropdown-item">
-                          <span class="image"><img src="images/img.jpg" alt="Profile Image" /></span>
+                          <span class="image"><img src="<?= router::assets("/gentelela/images/img.jpg", assets::ABSOLUTE_URL) ?> alt="Profile Image" /></span>
                           <span>
                             <span>John Smith</span>
                             <span class="time">3 mins ago</span>
@@ -264,7 +312,7 @@
                       </li>
                       <li class="nav-item">
                         <a class="dropdown-item">
-                          <span class="image"><img src="images/img.jpg" alt="Profile Image" /></span>
+                          <span class="image"><img src="<?= router::assets("/gentelela/images/img.jpg", assets::ABSOLUTE_URL) ?> alt="Profile Image" /></span>
                           <span>
                             <span>John Smith</span>
                             <span class="time">3 mins ago</span>
@@ -276,7 +324,7 @@
                       </li>
                       <li class="nav-item">
                         <a class="dropdown-item">
-                          <span class="image"><img src="images/img.jpg" alt="Profile Image" /></span>
+                          <span class="image"><img src="<?= router::assets("/gentelela/images/img.jpg", assets::ABSOLUTE_URL) ?> alt="Profile Image" /></span>
                           <span>
                             <span>John Smith</span>
                             <span class="time">3 mins ago</span>
@@ -378,10 +426,10 @@
                       <li><a class="collapse-link"><i class="fa fa-chevron-up"></i></a>
                       </li>
                       <li class="dropdown">
-                        <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false"><i class="fa fa-wrench"></i></a>
+                        <a href="<?= router::label('#'); ?>" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false"><i class="fa fa-wrench"></i></a>
                         <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
-                            <a class="dropdown-item" href="#">Settings 1</a>
-                            <a class="dropdown-item" href="#">Settings 2</a>
+                            <a class="dropdown-item" href="<?= router::label('#'); ?>">Settings 1</a>
+                            <a class="dropdown-item" href="<?= router::label('#'); ?>">Settings 2</a>
                           </div>
                       </li>
                       <li><a class="close-link"><i class="fa fa-close"></i></a>
@@ -485,10 +533,10 @@
                       <li><a class="collapse-link"><i class="fa fa-chevron-up"></i></a>
                       </li>
                       <li class="dropdown">
-                        <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false"><i class="fa fa-wrench"></i></a>
+                        <a href="<?= router::label('#'); ?>" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false"><i class="fa fa-wrench"></i></a>
                         <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
-                            <a class="dropdown-item" href="#">Settings 1</a>
-                            <a class="dropdown-item" href="#">Settings 2</a>
+                            <a class="dropdown-item" href="<?= router::label('#'); ?>">Settings 1</a>
+                            <a class="dropdown-item" href="<?= router::label('#'); ?>">Settings 2</a>
                           </div>
                       </li>
                       <li><a class="close-link"><i class="fa fa-close"></i></a>
@@ -563,10 +611,10 @@
                       <li><a class="collapse-link"><i class="fa fa-chevron-up"></i></a>
                       </li>
                       <li class="dropdown">
-                        <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false"><i class="fa fa-wrench"></i></a>
+                        <a href="<?= router::label('#'); ?>" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false"><i class="fa fa-wrench"></i></a>
                         <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
-                            <a class="dropdown-item" href="#">Settings 1</a>
-                            <a class="dropdown-item" href="#">Settings 2</a>
+                            <a class="dropdown-item" href="<?= router::label('#'); ?>">Settings 1</a>
+                            <a class="dropdown-item" href="<?= router::label('#'); ?>">Settings 2</a>
                           </div>
                       </li>
                       <li><a class="close-link"><i class="fa fa-close"></i></a>
@@ -577,11 +625,11 @@
                   <div class="x_content">
                     <div class="dashboard-widget-content">
                       <ul class="quick-list">
-                        <li><i class="fa fa-line-chart"></i><a href="#">Achievements</a></li>
-                        <li><i class="fa fa-thumbs-up"></i><a href="#">Favorites</a></li>
-                        <li><i class="fa fa-calendar-o"></i><a href="#">Activities</a></li>
-                        <li><i class="fa fa-cog"></i><a href="#">Settings</a></li>
-                        <li><i class="fa fa-area-chart"></i><a href="#">Logout</a></li>
+                        <li><i class="fa fa-line-chart"></i><a href="<?= router::label('#'); ?>">Achievements</a></li>
+                        <li><i class="fa fa-thumbs-up"></i><a href="<?= router::label('#'); ?>">Favorites</a></li>
+                        <li><i class="fa fa-calendar-o"></i><a href="<?= router::label('#'); ?>">Activities</a></li>
+                        <li><i class="fa fa-cog"></i><a href="<?= router::label('#'); ?>">Settings</a></li>
+                        <li><i class="fa fa-area-chart"></i><a href="<?= router::label('#'); ?>">Logout</a></li>
                       </ul>
 
                       <div class="sidebar-widget">
@@ -606,10 +654,10 @@
                       <li><a class="collapse-link"><i class="fa fa-chevron-up"></i></a>
                       </li>
                       <li class="dropdown">
-                        <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false"><i class="fa fa-wrench"></i></a>
+                        <a href="<?= router::label('#'); ?>" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false"><i class="fa fa-wrench"></i></a>
                         <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
-                            <a class="dropdown-item" href="#">Settings 1</a>
-                            <a class="dropdown-item" href="#">Settings 2</a>
+                            <a class="dropdown-item" href="<?= router::label('#'); ?>">Settings 1</a>
+                            <a class="dropdown-item" href="<?= router::label('#'); ?>">Settings 2</a>
                           </div>
                       </li>
                       <li><a class="close-link"><i class="fa fa-close"></i></a>
@@ -695,10 +743,10 @@
                       <li><a class="collapse-link"><i class="fa fa-chevron-up"></i></a>
                       </li>
                       <li class="dropdown">
-                        <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false"><i class="fa fa-wrench"></i></a>
+                        <a href="<?= router::label('#'); ?>" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false"><i class="fa fa-wrench"></i></a>
                         <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
-                            <a class="dropdown-item" href="#">Settings 1</a>
-                            <a class="dropdown-item" href="#">Settings 2</a>
+                            <a class="dropdown-item" href="<?= router::label('#'); ?>">Settings 1</a>
+                            <a class="dropdown-item" href="<?= router::label('#'); ?>">Settings 2</a>
                           </div>
                       </li>
                       <li><a class="close-link"><i class="fa fa-close"></i></a>
@@ -822,10 +870,10 @@
                       <li><a class="collapse-link"><i class="fa fa-chevron-up"></i></a>
                       </li>
                       <li class="dropdown">
-                        <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false"><i class="fa fa-wrench"></i></a>
+                        <a href="<?= router::label('#'); ?>" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false"><i class="fa fa-wrench"></i></a>
                         <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
-                            <a class="dropdown-item" href="#">Settings 1</a>
-                            <a class="dropdown-item" href="#">Settings 2</a>
+                            <a class="dropdown-item" href="<?= router::label('#'); ?>">Settings 1</a>
+                            <a class="dropdown-item" href="<?= router::label('#'); ?>">Settings 2</a>
                           </div>
                       </li>
                       <li><a class="close-link"><i class="fa fa-close"></i></a>
@@ -836,10 +884,10 @@
                   <div class="x_content">
                     <div class="dashboard-widget-content">
                       <ul class="quick-list">
-                        <li><i class="fa fa-bars"></i><a href="#">Subscription</a></li>
-                        <li><i class="fa fa-bar-chart"></i><a href="#">Auto Renewal</a> </li>
-                        <li><i class="fa fa-support"></i><a href="#">Help Desk</a> </li>
-                        <li><i class="fa fa-heart"></i><a href="#">Donations</a> </li>
+                        <li><i class="fa fa-bars"></i><a href="<?= router::label('#'); ?>">Subscription</a></li>
+                        <li><i class="fa fa-bar-chart"></i><a href="<?= router::label('#'); ?>">Auto Renewal</a> </li>
+                        <li><i class="fa fa-support"></i><a href="<?= router::label('#'); ?>">Help Desk</a> </li>
+                        <li><i class="fa fa-heart"></i><a href="<?= router::label('#'); ?>">Donations</a> </li>
                       </ul>
 
                       <div class="sidebar-widget">
@@ -869,7 +917,7 @@
           <!-- DISCOVERY START BLOCK : LAYOUT_3_FOOTER -->
 
           <div class="pull-right">
-            Gentelella - Bootstrap Admin Template by <a href="https://colorlib.com">Colorlib</a>
+            Gentelella - Bootstrap Admin Template by <a href="<?= router::label('#'); ?>"">Colorlib</a>
           </div>
           <div class="clearfix"></div>
 
@@ -879,50 +927,6 @@
         <!-- /footer content -->
       </div>
     </div>
-
-    <!-- DISCOVERY START BLOCK : LAYOUT_3_JS -->
-
-    <!-- jQuery -->
-    <script src="../vendors/jquery/dist/jquery.min.js"></script>
-    <!-- Bootstrap -->
-   <script src="../vendors/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
-    <!-- FastClick -->
-    <script src="../vendors/fastclick/lib/fastclick.js"></script>
-    <!-- NProgress -->
-    <script src="../vendors/nprogress/nprogress.js"></script>
-    <!-- Chart.js -->
-    <script src="../vendors/Chart.js/dist/Chart.min.js"></script>
-    <!-- jQuery Sparklines -->
-    <script src="../vendors/jquery-sparkline/dist/jquery.sparkline.min.js"></script>
-    <!-- morris.js -->
-    <script src="../vendors/raphael/raphael.min.js"></script>
-    <script src="../vendors/morris.js/morris.min.js"></script>
-    <!-- gauge.js -->
-    <script src="../vendors/gauge.js/dist/gauge.min.js"></script>
-    <!-- bootstrap-progressbar -->
-    <script src="../vendors/bootstrap-progressbar/bootstrap-progressbar.min.js"></script>
-    <!-- Skycons -->
-    <script src="../vendors/skycons/skycons.js"></script>
-    <!-- Flot -->
-    <script src="../vendors/Flot/jquery.flot.js"></script>
-    <script src="../vendors/Flot/jquery.flot.pie.js"></script>
-    <script src="../vendors/Flot/jquery.flot.time.js"></script>
-    <script src="../vendors/Flot/jquery.flot.stack.js"></script>
-    <script src="../vendors/Flot/jquery.flot.resize.js"></script>
-    <!-- Flot plugins -->
-    <script src="../vendors/flot.orderbars/js/jquery.flot.orderBars.js"></script>
-    <script src="../vendors/flot-spline/js/jquery.flot.spline.min.js"></script>
-    <script src="../vendors/flot.curvedlines/curvedLines.js"></script>
-    <!-- DateJS -->
-    <script src="../vendors/DateJS/build/date.js"></script>
-    <!-- bootstrap-daterangepicker -->
-    <script src="../vendors/moment/min/moment.min.js"></script>
-    <script src="../vendors/bootstrap-daterangepicker/daterangepicker.js"></script>
-
-    <!-- Custom Theme Scripts -->
-    <script src="../build/js/custom.min.js"></script>
-
-    <!-- DISCOVERY END BLOCK -->
 
   </body>
 </html>

@@ -1,3 +1,6 @@
+<?php 
+    use douggonsouza\routes\router;
+?>
 <!DOCTYPE html>
 <html lang="pt-br">
   <head>
@@ -17,20 +20,37 @@
     <!-- DISCOVERY START BLOCK : PAGE_403_CSS -->
 
     <!-- Bootstrap -->
-    <link href="../vendors/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="<?= router::assets("/gentelela/vendors/bootstrap/dist/css/bootstrap.min.css", assets::ABSOLUTE_URL) ?>" rel="stylesheet">
     <!-- Font Awesome -->
-    <link href="../vendors/font-awesome/css/font-awesome.min.css" rel="stylesheet">
+    <link href="<?= router::assets("/gentelela/vendors/font-awesome/css/font-awesome.min.css", assets::ABSOLUTE_URL) ?>" rel="stylesheet">
     <!-- NProgress -->
-    <link href="../vendors/nprogress/nprogress.css" rel="stylesheet">
+    <link href="<?= router::assets("/gentelela/vendors/nprogress/nprogress.css", assets::ABSOLUTE_URL) ?>" rel="stylesheet">
 
     <!-- Custom Theme Style -->
-    <link href="../build/css/custom.min.css" rel="stylesheet">
+    <link href="<?= router::assets("/gentelela/build/css/custom.min.css", assets::ABSOLUTE_URL) ?>" rel="stylesheet">
 
     <!-- DISCOVERY END BLOCK -->
 
   </head>
 
   <body class="nav-md">
+
+    <!-- DISCOVERY START BLOCK : PAGE_403_JS -->
+
+    <!-- jQuery -->
+    <script src="<?= router::assets("/gentelela/vendors/jquery/dist/jquery.min.js", assets::ABSOLUTE_URL) ?>" ></script>
+    <!-- Bootstrap -->
+   <script src="<?= router::assets("/gentelela/vendors/bootstrap/dist/js/bootstrap.bundle.min.js", assets::ABSOLUTE_URL) ?>" ></script>
+    <!-- FastClick -->
+    <script src="<?= router::assets("/gentelela/vendors/fastclick/lib/fastclick.js", assets::ABSOLUTE_URL) ?>" ></script>
+    <!-- NProgress -->
+    <script src="<?= router::assets("/gentelela/vendors/nprogress/nprogress.js", assets::ABSOLUTE_URL) ?>" ></script>
+
+    <!-- Custom Theme Scripts -->
+    <script src="<?= router::assets("/gentelela/build/js/custom.min.js", assets::ABSOLUTE_URL) ?>" ></script>
+
+    <!-- DISCOVERY END BLOCK -->
+    
     <div class="container body">
       <div class="main_container">
         <!-- page content -->
@@ -42,7 +62,7 @@
 
               <h1 class="error-number">403</h1>
               <h2>Access denied</h2>
-              <p>Full authentication is required to access this resource. <a href="#">Report this?</a>
+              <p>Full authentication is required to access this resource. <a href="<?= router::label('#'); ?>">Report this?</a>
               </p>
               <div class="mid_center">
                 <h3>Search</h3>
@@ -66,22 +86,6 @@
         <!-- /page content -->
       </div>
     </div>
-
-    <!-- DISCOVERY START BLOCK : PAGE_403_JS -->
-
-    <!-- jQuery -->
-    <script src="../vendors/jquery/dist/jquery.min.js"></script>
-    <!-- Bootstrap -->
-   <script src="../vendors/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
-    <!-- FastClick -->
-    <script src="../vendors/fastclick/lib/fastclick.js"></script>
-    <!-- NProgress -->
-    <script src="../vendors/nprogress/nprogress.js"></script>
-
-    <!-- Custom Theme Scripts -->
-    <script src="../build/js/custom.min.js"></script>
-
-    <!-- DISCOVERY END BLOCK -->
 
   </body>
 </html>

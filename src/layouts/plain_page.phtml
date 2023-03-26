@@ -1,3 +1,6 @@
+<?php 
+    use douggonsouza\routes\router;
+?>
 <!DOCTYPE html>
 <html lang="pt-br">
   <head>
@@ -17,19 +20,36 @@
     <!-- DISCOVERY START BLOCK : PLAIN_PAGE_CSS -->
 
     <!-- Bootstrap -->
-    <link href="../vendors/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="<?= router::assets("/gentelela/vendors/bootstrap/dist/css/bootstrap.min.css", assets::ABSOLUTE_URL) ?>" rel="stylesheet">
     <!-- Font Awesome -->
-    <link href="../vendors/font-awesome/css/font-awesome.min.css" rel="stylesheet">
+    <link href="<?= router::assets("/gentelela/vendors/font-awesome/css/font-awesome.min.css", assets::ABSOLUTE_URL) ?>" rel="stylesheet">
     <!-- NProgress -->
-    <link href="../vendors/nprogress/nprogress.css" rel="stylesheet">
+    <link href="<?= router::assets("/gentelela/vendors/nprogress/nprogress.css", assets::ABSOLUTE_URL) ?>" rel="stylesheet">
 
     <!-- Custom Theme Style -->
-    <link href="../build/css/custom.min.css" rel="stylesheet">
+    <link href="<?= router::assets("/gentelela/build/css/custom.min.css", assets::ABSOLUTE_URL) ?>" rel="stylesheet">
 
     <!-- DISCOVERY END BLOCK -->
   </head>
 
   <body class="nav-md">
+
+    <!-- DISCOVERY START BLOCK : PLAIN_PAGE_JS -->
+
+    <!-- jQuery -->
+    <script src="<?= router::assets("/gentelela/vendors/jquery/dist/jquery.min.js", assets::ABSOLUTE_URL) ?>" ></script>
+    <!-- Bootstrap -->
+   <script src="<?= router::assets("/gentelela/vendors/bootstrap/dist/js/bootstrap.bundle.min.js", assets::ABSOLUTE_URL) ?>" ></script>
+    <!-- FastClick -->
+    <script src="<?= router::assets("/gentelela/vendors/fastclick/lib/fastclick.js", assets::ABSOLUTE_URL) ?>" ></script>
+    <!-- NProgress -->
+    <script src="<?= router::assets("/gentelela/vendors/nprogress/nprogress.js", assets::ABSOLUTE_URL) ?>" ></script>
+    
+    <!-- Custom Theme Scripts -->
+    <script src="<?= router::assets("/gentelela/build/js/custom.min.js", assets::ABSOLUTE_URL) ?>" ></script>
+
+    <!-- DISCOVERY END BLOCK -->
+    
     <div class="container body">
       <div class="main_container">
         <div class="col-md-3 left_col">
@@ -46,7 +66,7 @@
               <!-- DISCOVERY START BLOCK : PLAIN_PAGE_PROFILE -->
 
               <div class="profile_pic">
-                <img src="images/img.jpg" alt="..." class="img-circle profile_img">
+                <img src="<?= router::assets("/gentelela/images/img.jpg", assets::ABSOLUTE_URL) ?>" alt="<?= router::label('image'); ?>" class="img-circle profile_img">
               </div>
               <div class="profile_info">
                 <span>Welcome,</span>
@@ -146,19 +166,19 @@
                   </li>
                   <li><a><i class="fa fa-sitemap"></i> Multilevel Menu <span class="fa fa-chevron-down"></span></a>
                     <ul class="nav child_menu">
-                        <li><a href="#level1_1">Level One</a>
+                        <li><a href="<?= router::label('#'); ?>level1_1">Level One</a>
                         </li>
                         <li><a>Level One<span class="fa fa-chevron-down"></span></a>
                           <ul class="nav child_menu">
                             <li class="sub_menu"><a href="level2.html">Level Two</a>
                             </li>
-                            <li><a href="#level2_1">Level Two</a>
+                            <li><a href="<?= router::label('#'); ?>level2_1">Level Two</a>
                             </li>
-                            <li><a href="#level2_2">Level Two</a>
+                            <li><a href="<?= router::label('#'); ?>level2_2">Level Two</a>
                             </li>
                           </ul>
                         </li>
-                        <li><a href="#level1_2">Level One</a>
+                        <li><a href="<?= router::label('#'); ?>level1_2">Level One</a>
                         </li>
                     </ul>
                   </li>                  
@@ -210,7 +230,7 @@
                 <ul class=" navbar-right">
                   <li class="nav-item dropdown open" style="padding-left: 15px;">
                     <a href="javascript:;" class="user-profile dropdown-toggle" aria-haspopup="true" id="navbarDropdown" data-toggle="dropdown" aria-expanded="false">
-                      <img src="images/img.jpg" alt="">John Doe
+                      <img src="<?= router::assets("/gentelela/images/img.jpg", assets::ABSOLUTE_URL) ?>" alt="">John Doe
                     </a>
                     <div class="dropdown-menu dropdown-usermenu pull-right" aria-labelledby="navbarDropdown">
                       <a class="dropdown-item"  href="javascript:;"> Profile</a>
@@ -231,7 +251,7 @@
                     <ul class="dropdown-menu list-unstyled msg_list" role="menu" aria-labelledby="navbarDropdown1">
                       <li class="nav-item">
                         <a class="dropdown-item">
-                          <span class="image"><img src="images/img.jpg" alt="Profile Image" /></span>
+                          <span class="image"><img src="<?= router::assets("/gentelela/images/img.jpg", assets::ABSOLUTE_URL) ?>" alt="Profile Image" /></span>
                           <span>
                             <span>John Smith</span>
                             <span class="time">3 mins ago</span>
@@ -243,7 +263,7 @@
                       </li>
                       <li class="nav-item">
                         <a class="dropdown-item">
-                          <span class="image"><img src="images/img.jpg" alt="Profile Image" /></span>
+                          <span class="image"><img src="<?= router::assets("/gentelela/images/img.jpg", assets::ABSOLUTE_URL) ?>" alt="Profile Image" /></span>
                           <span>
                             <span>John Smith</span>
                             <span class="time">3 mins ago</span>
@@ -255,7 +275,7 @@
                       </li>
                       <li class="nav-item">
                         <a class="dropdown-item">
-                          <span class="image"><img src="images/img.jpg" alt="Profile Image" /></span>
+                          <span class="image"><img src="<?= router::assets("/gentelela/images/img.jpg", assets::ABSOLUTE_URL) ?>" alt="Profile Image" /></span>
                           <span>
                             <span>John Smith</span>
                             <span class="time">3 mins ago</span>
@@ -267,7 +287,7 @@
                       </li>
                       <li class="nav-item">
                         <a class="dropdown-item">
-                          <span class="image"><img src="images/img.jpg" alt="Profile Image" /></span>
+                          <span class="image"><img src="<?= router::assets("/gentelela/images/img.jpg", assets::ABSOLUTE_URL) ?>" alt="Profile Image" /></span>
                           <span>
                             <span>John Smith</span>
                             <span class="time">3 mins ago</span>
@@ -331,10 +351,10 @@
                       <li><a class="collapse-link"><i class="fa fa-chevron-up"></i></a>
                       </li>
                       <li class="dropdown">
-                        <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false"><i class="fa fa-wrench"></i></a>
+                        <a href="<?= router::label('#'); ?>" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false"><i class="fa fa-wrench"></i></a>
                         <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
-                            <a class="dropdown-item" href="#">Settings 1</a>
-                            <a class="dropdown-item" href="#">Settings 2</a>
+                            <a class="dropdown-item" href="<?= router::label('#'); ?>">Settings 1</a>
+                            <a class="dropdown-item" href="<?= router::label('#'); ?>">Settings 2</a>
                           </div>
                       </li>
                       <li><a class="close-link"><i class="fa fa-close"></i></a>
@@ -361,7 +381,7 @@
           <!-- DISCOVERY START BLOCK : PLAIN_PAGE_FOOTER -->
 
           <div class="pull-right">
-            Gentelella - Bootstrap Admin Template by <a href="https://colorlib.com">Colorlib</a>
+            Gentelella - Bootstrap Admin Template by <a href="<?= router::label('#'); ?>"">Colorlib</a>
           </div>
           <div class="clearfix"></div>
 
@@ -372,22 +392,6 @@
 
       </div>
     </div>
-
-    <!-- DISCOVERY START BLOCK : PLAIN_PAGE_JS -->
-
-    <!-- jQuery -->
-    <script src="../vendors/jquery/dist/jquery.min.js"></script>
-    <!-- Bootstrap -->
-   <script src="../vendors/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
-    <!-- FastClick -->
-    <script src="../vendors/fastclick/lib/fastclick.js"></script>
-    <!-- NProgress -->
-    <script src="../vendors/nprogress/nprogress.js"></script>
-    
-    <!-- Custom Theme Scripts -->
-    <script src="../build/js/custom.min.js"></script>
-
-    <!-- DISCOVERY END BLOCK -->
 
   </body>
 </html>
