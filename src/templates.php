@@ -15,29 +15,24 @@ define('PAGE_500', SRC_BENCHMARCK . '/layouts/page_500.phtml');
 define('LAYOUT_2', SRC_BENCHMARCK . '/layouts/layout2.phtml');
 // define('LAYOUT_3', SRC_BENCHMARCK . '/layouts/layout3.phtml');
 
-define('LAYOUT_1_HEAD', SRC_BENCHMARCK . '/blocks/LAYOUT_1_HEAD.phtml');
+define('HEAD', SRC_BENCHMARCK . '/blocks/HEAD.phtml');
+define('FOOTER', SRC_BENCHMARCK . '/blocks/FOOTER.phtml');
+define('PROFILE', SRC_BENCHMARCK . '/blocks/PROFILE.phtml');
+define('FOOTER_BUTTONS', SRC_BENCHMARCK . '/blocks/FOOTER_BUTTONS.phtml');
+define('NAVBAR', SRC_BENCHMARCK . '/blocks/NAVBAR.phtml');
+define('SIDEBAR', SRC_BENCHMARCK . '/blocks/SIDEBAR.phtml');
+define('COPYRIGHT', SRC_BENCHMARCK . '/blocks/COPYRIGHT.phtml');
+
 define('LAYOUT_1_CSS', SRC_BENCHMARCK . '/blocks/LAYOUT_1_CSS.phtml');
-define('LAYOUT_1_PROFILE', SRC_BENCHMARCK . '/blocks/LAYOUT_1_PROFILE.phtml');
-define('LAYOUT_1_SIDEBAR', SRC_BENCHMARCK . '/blocks/LAYOUT_1_SIDEBAR.phtml');
-define('LAYOUT_1_FOOTER_BUTTONS', SRC_BENCHMARCK . '/blocks/LAYOUT_1_FOOTER_BUTTONS.phtml');
-define('LAYOUT_1_NAVBAR', SRC_BENCHMARCK . '/blocks/LAYOUT_1_NAVBAR.phtml');
 define('LAYOUT_1_PAGE_CONTENT', SRC_BENCHMARCK . '/blocks/LAYOUT_1_PAGE_CONTENT.phtml');
-define('LAYOUT_1_FOOTER', SRC_BENCHMARCK . '/blocks/LAYOUT_1_FOOTER.phtml');
 define('LAYOUT_1_JS', SRC_BENCHMARCK . '/blocks/LAYOUT_1_JS.phtml');
 
-define('LOGIN_HEAD', SRC_BENCHMARCK . '/blocks/LOGIN_HEAD.phtml');
 define('LOGIN_CSS', SRC_BENCHMARCK . '/blocks/LOGIN_CSS.phtml');
 define('LOGIN_LOGIN_CONTENT', SRC_BENCHMARCK . '/blocks/LOGIN_LOGIN_CONTENT.phtml');
 define('LOGIN_REGISTER_CONTENT', SRC_BENCHMARCK . '/blocks/LOGIN_REGISTER_CONTENT.phtml');
 
-define('PLAIN_PAGE_HEAD', SRC_BENCHMARCK . '/blocks/PLAIN_PAGE_HEAD.phtml');
 define('PLAIN_PAGE_CSS', SRC_BENCHMARCK . '/blocks/PLAIN_PAGE_CSS.phtml');
-define('PLAIN_PAGE_PROFILE', SRC_BENCHMARCK . '/blocks/PLAIN_PAGE_PROFILE.phtml');
-define('PLAIN_PAGE_SIDEBAR', SRC_BENCHMARCK . '/blocks/PLAIN_PAGE_SIDEBAR.phtml');
-define('PLAIN_PAGE_FOOTER_BUTTONS', SRC_BENCHMARCK . '/blocks/PLAIN_PAGE_FOOTER_BUTTONS.phtml');
-define('PLAIN_PAGE_NAVBAR', SRC_BENCHMARCK . '/blocks/PLAIN_PAGE_NAVBAR.phtml');
 define('PLAIN_PAGE_PAGE_CONTENT', SRC_BENCHMARCK . '/blocks/PLAIN_PAGE_PAGE_CONTENT.phtml');
-define('PLAIN_PAGE_FOOTER', SRC_BENCHMARCK . '/blocks/PLAIN_PAGE_FOOTER.phtml');
 define('PLAIN_PAGE_JS', SRC_BENCHMARCK . '/blocks/PLAIN_PAGE_JS.phtml');
 
 

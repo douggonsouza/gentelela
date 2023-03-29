@@ -3,7 +3,7 @@
         'name' => 'douggonsouza/gentelela',
         'pretty_version' => 'dev-main',
         'version' => 'dev-main',
-        'reference' => '1ba648d1da20158ace4d38941e54c1b92bbcbd72',
+        'reference' => '65312ef30f412e083da3543cd00c7819bca0b969',
         'type' => 'library',
         'install_path' => __DIR__ . '/../../',
         'aliases' => array(),
@@ -22,7 +22,7 @@
         'douggonsouza/gentelela' => array(
             'pretty_version' => 'dev-main',
             'version' => 'dev-main',
-            'reference' => '1ba648d1da20158ace4d38941e54c1b92bbcbd72',
+            'reference' => '65312ef30f412e083da3543cd00c7819bca0b969',
             'type' => 'library',
             'install_path' => __DIR__ . '/../../',
             'aliases' => array(),
