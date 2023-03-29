@@ -13,6 +13,7 @@ class ComposerStaticInit174f4cea62571bd2affc3a54a21e306d
             'douggonsouza\\permission\\' => 24,
             'douggonsouza\\language\\' => 22,
             'douggonsouza\\gentelela\\' => 23,
+            'douggonsouza\\alerts\\' => 20,
         ),
     );
 
@@ -33,10 +34,16 @@ class ComposerStaticInit174f4cea62571bd2affc3a54a21e306d
         array (
             0 => __DIR__ . '/../..' . '/src',
         ),
+        'douggonsouza\\alerts\\' => 
+        array (
+            0 => __DIR__ . '/..' . '/douggonsouza/alerts/src',
+        ),
     );
 
     public static $classMap = array (
         'Composer\\InstalledVersions' => __DIR__ . '/..' . '/composer/InstalledVersions.php',
+        'douggonsouza\\alerts\\alerts' => __DIR__ . '/..' . '/douggonsouza/alerts/src/alerts.php',
+        'douggonsouza\\alerts\\alertsInterface' => __DIR__ . '/..' . '/douggonsouza/alerts/src/alertsInterface.php',
         'douggonsouza\\gentelela\\alerts' => __DIR__ . '/../..' . '/src/alerts.php',
         'douggonsouza\\gentelela\\alertsInterface' => __DIR__ . '/../..' . '/src/alertsInterface.php',
         'douggonsouza\\gentelela\\assets\\assets' => __DIR__ . '/../..' . '/src/assets/assets.php',

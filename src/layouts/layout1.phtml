@@ -1,47 +1,33 @@
-<?php 
-    use douggonsouza\routes\router;
-    use douggonsouza\routes\assert;
-?>
 <!DOCTYPE html>
 <html lang="pt-br">
   <head>
-
-    <!-- DISCOVERY START BLOCK : LAYOUT_1_HEAD -->
-
     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
     <!-- Meta, title, CSS, favicons, etc. -->
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-	  <link rel="icon" href="images/favicon.ico" type="image/ico" />
+	<link rel="icon" href="images/favicon.ico" type="image/ico" />
 
     <title>Gentelella Alela! | </title>
 
-    <!-- DISCOVERY END BLOCK -->
-
-    <!-- DISCOVERY START BLOCK : LAYOUT_1_CSS -->
-
     <!-- Bootstrap -->
-    <link href="<?= router::assets("/css/font-face.css", assets::ABSOLUTE_URL) ?>../vendors/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="../vendors/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet">
     <!-- Font Awesome -->
-    <link href="<?= router::assets("/css/font-face.css", assets::ABSOLUTE_URL) ?>../vendors/font-awesome/css/font-awesome.min.css" rel="stylesheet">
+    <link href="../vendors/font-awesome/css/font-awesome.min.css" rel="stylesheet">
     <!-- NProgress -->
-    <link href="<?= router::assets("/css/font-face.css", assets::ABSOLUTE_URL) ?>../vendors/nprogress/nprogress.css" rel="stylesheet">
+    <link href="../vendors/nprogress/nprogress.css" rel="stylesheet">
     <!-- iCheck -->
-    <link href="<?= router::assets("/css/font-face.css", assets::ABSOLUTE_URL) ?>../vendors/iCheck/skins/flat/green.css" rel="stylesheet">
+    <link href="../vendors/iCheck/skins/flat/green.css" rel="stylesheet">
 	
     <!-- bootstrap-progressbar -->
-    <link href="<?= router::assets("/css/font-face.css", assets::ABSOLUTE_URL) ?>../vendors/bootstrap-progressbar/css/bootstrap-progressbar-3.3.4.min.css" rel="stylesheet">
+    <link href="../vendors/bootstrap-progressbar/css/bootstrap-progressbar-3.3.4.min.css" rel="stylesheet">
     <!-- JQVMap -->
-    <link href="<?= router::assets("/css/font-face.css", assets::ABSOLUTE_URL) ?>../vendors/jqvmap/dist/jqvmap.min.css" rel="stylesheet"/>
+    <link href="../vendors/jqvmap/dist/jqvmap.min.css" rel="stylesheet"/>
     <!-- bootstrap-daterangepicker -->
-    <link href="<?= router::assets("/css/font-face.css", assets::ABSOLUTE_URL) ?>../vendors/bootstrap-daterangepicker/daterangepicker.css" rel="stylesheet">
+    <link href="../vendors/bootstrap-daterangepicker/daterangepicker.css" rel="stylesheet">
 
     <!-- Custom Theme Style -->
-    <link href="<?= router::assets("/css/font-face.css", assets::ABSOLUTE_URL) ?>../build/css/custom.min.css" rel="stylesheet">
-
-    <!-- DISCOVERY END BLOCK -->
-
+    <link href="../build/css/custom.min.css" rel="stylesheet">
   </head>
 
   <body class="nav-md">
@@ -57,19 +43,13 @@
 
             <!-- menu profile quick info -->
             <div class="profile clearfix">
-
-              <!-- DISCOVERY START BLOCK : LAYOUT_1_PROFILE -->
-
               <div class="profile_pic">
-                <img src="<?= router::assets("/images/icon/logo-white.png", assets::ABSOLUTE_URL) ?><?= router::assets("/images/icon/logo-white.png", assets::ABSOLUTE_URL) ?>images/img.jpg" alt="..." class="img-circle profile_img">
+                <img src="images/img.jpg" alt="..." class="img-circle profile_img">
               </div>
               <div class="profile_info">
                 <span>Welcome,</span>
                 <h2>John Doe</h2>
               </div>
-
-              <!-- DISCOVERY END BLOCK -->
-
             </div>
             <!-- /menu profile quick info -->
 
@@ -77,9 +57,6 @@
 
             <!-- sidebar menu -->
             <div id="sidebar-menu" class="main_menu_side hidden-print main_menu">
-              
-              <!-- DISCOVERY START BLOCK : LAYOUT_1_SIDEBAR -->
-
               <div class="menu_section">
                 <h3>General</h3>
                 <ul class="nav side-menu">
@@ -177,19 +154,13 @@
                   </li>                  
                   <li><a href="javascript:void(0)"><i class="fa fa-laptop"></i> Landing Page <span class="label label-success pull-right">Coming Soon</span></a></li>
                 </ul>
-
               </div>
-
-              <!-- DISCOVERY END BLOCK -->
 
             </div>
             <!-- /sidebar menu -->
 
             <!-- /menu footer buttons -->
             <div class="sidebar-footer hidden-small">
-
-              <!-- DISCOVERY START BLOCK : LAYOUT_1_FOOTER_BUTTONS -->
-
               <a data-toggle="tooltip" data-placement="top" title="Settings">
                 <span class="glyphicon glyphicon-cog" aria-hidden="true"></span>
               </a>
@@ -202,9 +173,6 @@
               <a data-toggle="tooltip" data-placement="top" title="Logout" href="login.html">
                 <span class="glyphicon glyphicon-off" aria-hidden="true"></span>
               </a>
-
-              <!-- DISCOVERY END BLOCK -->
-
             </div>
             <!-- /menu footer buttons -->
           </div>
@@ -216,15 +184,11 @@
               <div class="nav toggle">
                 <a id="menu_toggle"><i class="fa fa-bars"></i></a>
               </div>
-
               <nav class="nav navbar-nav">
-
-              <!-- DISCOVERY START BLOCK : LAYOUT_1_NAVBAR -->
-
               <ul class=" navbar-right">
                 <li class="nav-item dropdown open" style="padding-left: 15px;">
                   <a href="javascript:;" class="user-profile dropdown-toggle" aria-haspopup="true" id="navbarDropdown" data-toggle="dropdown" aria-expanded="false">
-                    <img src="<?= router::assets("/images/icon/logo-white.png", assets::ABSOLUTE_URL) ?><?= router::assets("/images/icon/logo-white.png", assets::ABSOLUTE_URL) ?>images/img.jpg" alt="">John Doe
+                    <img src="images/img.jpg" alt="">John Doe
                   </a>
                   <div class="dropdown-menu dropdown-usermenu pull-right" aria-labelledby="navbarDropdown">
                     <a class="dropdown-item"  href="javascript:;"> Profile</a>
@@ -245,7 +209,7 @@
                   <ul class="dropdown-menu list-unstyled msg_list" role="menu" aria-labelledby="navbarDropdown1">
                     <li class="nav-item">
                       <a class="dropdown-item">
-                        <span class="image"><img src="<?= router::assets("/images/icon/logo-white.png", assets::ABSOLUTE_URL) ?><?= router::assets("/images/icon/logo-white.png", assets::ABSOLUTE_URL) ?>images/img.jpg" alt="Profile Image" /></span>
+                        <span class="image"><img src="images/img.jpg" alt="Profile Image" /></span>
                         <span>
                           <span>John Smith</span>
                           <span class="time">3 mins ago</span>
@@ -257,7 +221,7 @@
                     </li>
                     <li class="nav-item">
                       <a class="dropdown-item">
-                        <span class="image"><img src="<?= router::assets("/images/icon/logo-white.png", assets::ABSOLUTE_URL) ?><?= router::assets("/images/icon/logo-white.png", assets::ABSOLUTE_URL) ?>images/img.jpg" alt="Profile Image" /></span>
+                        <span class="image"><img src="images/img.jpg" alt="Profile Image" /></span>
                         <span>
                           <span>John Smith</span>
                           <span class="time">3 mins ago</span>
@@ -269,7 +233,7 @@
                     </li>
                     <li class="nav-item">
                       <a class="dropdown-item">
-                        <span class="image"><img src="<?= router::assets("/images/icon/logo-white.png", assets::ABSOLUTE_URL) ?><?= router::assets("/images/icon/logo-white.png", assets::ABSOLUTE_URL) ?>images/img.jpg" alt="Profile Image" /></span>
+                        <span class="image"><img src="images/img.jpg" alt="Profile Image" /></span>
                         <span>
                           <span>John Smith</span>
                           <span class="time">3 mins ago</span>
@@ -281,7 +245,7 @@
                     </li>
                     <li class="nav-item">
                       <a class="dropdown-item">
-                        <span class="image"><img src="<?= router::assets("/images/icon/logo-white.png", assets::ABSOLUTE_URL) ?>images/img.jpg" alt="Profile Image" /></span>
+                        <span class="image"><img src="images/img.jpg" alt="Profile Image" /></span>
                         <span>
                           <span>John Smith</span>
                           <span class="time">3 mins ago</span>
@@ -302,24 +266,15 @@
                   </ul>
                 </li>
               </ul>
-            
-            <!-- DISCOVERY END BLOCK -->
-            
             </nav>
-
           </div>
         </div>
         <!-- /top navigation -->
 
         <!-- page content -->
         <div class="right_col" role="main">
-
-          <!-- DISCOVERY START BLOCK : LAYOUT_1_PAGE_CONTENT -->
-
           <!-- top tiles -->
-
           <div class="row" style="display: inline-block;" >
-          
           <div class="tile_count">
             <div class="col-md-2 col-sm-4  tile_stats_count">
               <span class="count_top"><i class="fa fa-user"></i> Total Users</span>
@@ -352,7 +307,6 @@
               <span class="count_bottom"><i class="green"><i class="fa fa-sort-asc"></i>34% </i> From last Week</span>
             </div>
           </div>
-          
         </div>
           <!-- /top tiles -->
 
@@ -428,6 +382,7 @@
           <br />
 
           <div class="row">
+
 
             <div class="col-md-4 col-sm-4 ">
               <div class="x_panel tile fixed_height_320">
@@ -666,6 +621,7 @@
             </div>
 
           </div>
+
 
           <div class="row">
             <div class="col-md-4 col-sm-4 ">
@@ -994,73 +950,60 @@
               </div>
             </div>
           </div>
-
-          <!-- DISCOVERY END BLOCK -->
-
         </div>
         <!-- /page content -->
 
         <!-- footer content -->
         <footer>
-
-          <!-- DISCOVERY START BLOCK : LAYOUT_1_FOOTER -->
-
           <div class="pull-right">
             Gentelella - Bootstrap Admin Template by <a href="https://colorlib.com">Colorlib</a>
           </div>
           <div class="clearfix"></div>
-
-          <!-- DISCOVERY END BLOCK -->
-
         </footer>
         <!-- /footer content -->
       </div>
     </div>
 
-    <!-- DISCOVERY START BLOCK : LAYOUT_1_JS -->
-
     <!-- jQuery -->
-    <script src="<?= router::assets("/images/icon/logo-white.png", assets::ABSOLUTE_URL) ?><?= router::assets("/vendor/jquery-3.2.1.min.js", assets::ABSOLUTE_URL) ?>../vendors/jquery/dist/jquery.min.js"></script>
+    <script src="../vendors/jquery/dist/jquery.min.js"></script>
     <!-- Bootstrap -->
-    <script src="<?= router::assets("/images/icon/logo-white.png", assets::ABSOLUTE_URL) ?><?= router::assets("/vendor/jquery-3.2.1.min.js", assets::ABSOLUTE_URL) ?>../vendors/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="../vendors/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
     <!-- FastClick -->
-    <script src="<?= router::assets("/images/icon/logo-white.png", assets::ABSOLUTE_URL) ?><?= router::assets("/vendor/jquery-3.2.1.min.js", assets::ABSOLUTE_URL) ?>../vendors/fastclick/lib/fastclick.js"></script>
+    <script src="../vendors/fastclick/lib/fastclick.js"></script>
     <!-- NProgress -->
-    <script src="<?= router::assets("/images/icon/logo-white.png", assets::ABSOLUTE_URL) ?><?= router::assets("/vendor/jquery-3.2.1.min.js", assets::ABSOLUTE_URL) ?>../vendors/nprogress/nprogress.js"></script>
+    <script src="../vendors/nprogress/nprogress.js"></script>
     <!-- Chart.js -->
-    <script src="<?= router::assets("/images/icon/logo-white.png", assets::ABSOLUTE_URL) ?><?= router::assets("/vendor/jquery-3.2.1.min.js", assets::ABSOLUTE_URL) ?>../vendors/Chart.js/dist/Chart.min.js"></script>
+    <script src="../vendors/Chart.js/dist/Chart.min.js"></script>
     <!-- gauge.js -->
-    <script src="<?= router::assets("/images/icon/logo-white.png", assets::ABSOLUTE_URL) ?><?= router::assets("/vendor/jquery-3.2.1.min.js", assets::ABSOLUTE_URL) ?>../vendors/gauge.js/dist/gauge.min.js"></script>
+    <script src="../vendors/gauge.js/dist/gauge.min.js"></script>
     <!-- bootstrap-progressbar -->
-    <script src="<?= router::assets("/images/icon/logo-white.png", assets::ABSOLUTE_URL) ?><?= router::assets("/vendor/jquery-3.2.1.min.js", assets::ABSOLUTE_URL) ?>../vendors/bootstrap-progressbar/bootstrap-progressbar.min.js"></script>
+    <script src="../vendors/bootstrap-progressbar/bootstrap-progressbar.min.js"></script>
     <!-- iCheck -->
-    <script src="<?= router::assets("/images/icon/logo-white.png", assets::ABSOLUTE_URL) ?><?= router::assets("/vendor/jquery-3.2.1.min.js", assets::ABSOLUTE_URL) ?>../vendors/iCheck/icheck.min.js"></script>
+    <script src="../vendors/iCheck/icheck.min.js"></script>
     <!-- Skycons -->
-    <script src="<?= router::assets("/images/icon/logo-white.png", assets::ABSOLUTE_URL) ?><?= router::assets("/vendor/jquery-3.2.1.min.js", assets::ABSOLUTE_URL) ?>../vendors/skycons/skycons.js"></script>
+    <script src="../vendors/skycons/skycons.js"></script>
     <!-- Flot -->
-    <script src="<?= router::assets("/images/icon/logo-white.png", assets::ABSOLUTE_URL) ?><?= router::assets("/vendor/jquery-3.2.1.min.js", assets::ABSOLUTE_URL) ?>../vendors/Flot/jquery.flot.js"></script>
-    <script src="<?= router::assets("/images/icon/logo-white.png", assets::ABSOLUTE_URL) ?><?= router::assets("/vendor/jquery-3.2.1.min.js", assets::ABSOLUTE_URL) ?>../vendors/Flot/jquery.flot.pie.js"></script>
-    <script src="<?= router::assets("/images/icon/logo-white.png", assets::ABSOLUTE_URL) ?><?= router::assets("/vendor/jquery-3.2.1.min.js", assets::ABSOLUTE_URL) ?>../vendors/Flot/jquery.flot.time.js"></script>
-    <script src="<?= router::assets("/images/icon/logo-white.png", assets::ABSOLUTE_URL) ?><?= router::assets("/vendor/jquery-3.2.1.min.js", assets::ABSOLUTE_URL) ?>../vendors/Flot/jquery.flot.stack.js"></script>
-    <script src="<?= router::assets("/images/icon/logo-white.png", assets::ABSOLUTE_URL) ?><?= router::assets("/vendor/jquery-3.2.1.min.js", assets::ABSOLUTE_URL) ?>../vendors/Flot/jquery.flot.resize.js"></script>
+    <script src="../vendors/Flot/jquery.flot.js"></script>
+    <script src="../vendors/Flot/jquery.flot.pie.js"></script>
+    <script src="../vendors/Flot/jquery.flot.time.js"></script>
+    <script src="../vendors/Flot/jquery.flot.stack.js"></script>
+    <script src="../vendors/Flot/jquery.flot.resize.js"></script>
     <!-- Flot plugins -->
-    <script src="<?= router::assets("/images/icon/logo-white.png", assets::ABSOLUTE_URL) ?><?= router::assets("/vendor/jquery-3.2.1.min.js", assets::ABSOLUTE_URL) ?>../vendors/flot.orderbars/js/jquery.flot.orderBars.js"></script>
-    <script src="<?= router::assets("/images/icon/logo-white.png", assets::ABSOLUTE_URL) ?><?= router::assets("/vendor/jquery-3.2.1.min.js", assets::ABSOLUTE_URL) ?>../vendors/flot-spline/js/jquery.flot.spline.min.js"></script>
-    <script src="<?= router::assets("/images/icon/logo-white.png", assets::ABSOLUTE_URL) ?><?= router::assets("/vendor/jquery-3.2.1.min.js", assets::ABSOLUTE_URL) ?>../vendors/flot.curvedlines/curvedLines.js"></script>
+    <script src="../vendors/flot.orderbars/js/jquery.flot.orderBars.js"></script>
+    <script src="../vendors/flot-spline/js/jquery.flot.spline.min.js"></script>
+    <script src="../vendors/flot.curvedlines/curvedLines.js"></script>
     <!-- DateJS -->
-    <script src="<?= router::assets("/images/icon/logo-white.png", assets::ABSOLUTE_URL) ?><?= router::assets("/vendor/jquery-3.2.1.min.js", assets::ABSOLUTE_URL) ?>../vendors/DateJS/build/date.js"></script>
+    <script src="../vendors/DateJS/build/date.js"></script>
     <!-- JQVMap -->
-    <script src="<?= router::assets("/images/icon/logo-white.png", assets::ABSOLUTE_URL) ?><?= router::assets("/vendor/jquery-3.2.1.min.js", assets::ABSOLUTE_URL) ?>../vendors/jqvmap/dist/jquery.vmap.js"></script>
-    <script src="<?= router::assets("/images/icon/logo-white.png", assets::ABSOLUTE_URL) ?><?= router::assets("/vendor/jquery-3.2.1.min.js", assets::ABSOLUTE_URL) ?>../vendors/jqvmap/dist/maps/jquery.vmap.world.js"></script>
-    <script src="<?= router::assets("/images/icon/logo-white.png", assets::ABSOLUTE_URL) ?><?= router::assets("/vendor/jquery-3.2.1.min.js", assets::ABSOLUTE_URL) ?>../vendors/jqvmap/examples/js/jquery.vmap.sampledata.js"></script>
+    <script src="../vendors/jqvmap/dist/jquery.vmap.js"></script>
+    <script src="../vendors/jqvmap/dist/maps/jquery.vmap.world.js"></script>
+    <script src="../vendors/jqvmap/examples/js/jquery.vmap.sampledata.js"></script>
     <!-- bootstrap-daterangepicker -->
-    <script src="<?= router::assets("/images/icon/logo-white.png", assets::ABSOLUTE_URL) ?><?= router::assets("/vendor/jquery-3.2.1.min.js", assets::ABSOLUTE_URL) ?>../vendors/moment/min/moment.min.js"></script>
-    <script src="<?= router::assets("/images/icon/logo-white.png", assets::ABSOLUTE_URL) ?><?= router::assets("/vendor/jquery-3.2.1.min.js", assets::ABSOLUTE_URL) ?>../vendors/bootstrap-daterangepicker/daterangepicker.js"></script>
+    <script src="../vendors/moment/min/moment.min.js"></script>
+    <script src="../vendors/bootstrap-daterangepicker/daterangepicker.js"></script>
 
     <!-- Custom Theme Scripts -->
-    <script src="<?= router::assets("/images/icon/logo-white.png", assets::ABSOLUTE_URL) ?><?= router::assets("/vendor/jquery-3.2.1.min.js", assets::ABSOLUTE_URL) ?>../build/js/custom.min.js"></script>
+    <script src="../build/js/custom.min.js"></script>
 	
-    <!-- DISCOVERY END BLOCK -->
-
   </body>
 </html>

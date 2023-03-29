@@ -18,6 +18,7 @@
     "require": {
         "douggonsouza/propertys": "^1.0.0",
         "douggonsouza/permission": "^1.0.0",
-        "douggonsouza/language": "^1.0.0"
+        "douggonsouza/language": "^1.0.0",
+        "douggonsouza/alerts": "^1.0.0"
     }
 }

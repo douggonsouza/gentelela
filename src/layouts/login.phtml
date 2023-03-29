@@ -1,5 +1,6 @@
 <?php 
     use douggonsouza\routes\router;
+    use douggonsouza\mvc\control\controllers;
 ?>
 <!DOCTYPE html>
 <html lang="pt-br">
@@ -7,29 +8,17 @@
 
     <!-- DISCOVERY START BLOCK : LOGIN_HEAD -->
 
-    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-    <!-- Meta, title, CSS, favicons, etc. -->
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-
-    <title>Gentelella Alela! | </title>
+    <?php
+        router::part(new controllers(LOGIN_HEAD));
+    ?>
 
     <!-- DISCOVERY END BLOCK -->
 
     <!-- DISCOVERY START BLOCK : LOGIN_CSS -->
 
-    <!-- Bootstrap -->
-    <link href="<?= router::assets("/gentelela/vendors/bootstrap/dist/css/bootstrap.min.css", assets::ABSOLUTE_URL) ?>" rel="stylesheet">
-    <!-- Font Awesome -->
-    <link href="<?= router::assets("/gentelela/vendors/font-awesome/css/font-awesome.min.css", assets::ABSOLUTE_URL) ?>" rel="stylesheet">
-    <!-- NProgress -->
-    <link href="<?= router::assets("/gentelela/vendors/nprogress/nprogress.css", assets::ABSOLUTE_URL) ?>" rel="stylesheet">
-    <!-- Animate.css -->
-    <link href="<?= router::assets("/gentelela/vendors/animate.css/animate.min.css", assets::ABSOLUTE_URL) ?>" rel="stylesheet">
-
-    <!-- Custom Theme Style -->
-    <link href="<?= router::assets("/gentelela/build/css/custom.min.css", assets::ABSOLUTE_URL) ?>" rel="stylesheet">
+    <?php
+        router::part(new controllers(LOGIN_CSS));
+    ?>
 
     <!-- DISCOVERY END BLOCK -->
   </head>
@@ -45,41 +34,9 @@
 
             <!-- DISCOVERY START BLOCK : LOGIN_LOGIN_CONTENT -->
 
-            <form>
-              <h1>Login Form</h1>
-              <div>
-                <input type="text" class="form-control" placeholder="Username" required="" />
-              </div>
-              <div>
-                <input type="password" class="form-control" placeholder="Password" required="" />
-              </div>
-              <div>
-                <a class="btn btn-default submit" href="index.html">Log in</a>
-                <a class="reset_pass" href="<?= router::label('#'); ?>">Lost your password?</a>
-              </div>
-
-              <div class="clearfix"></div>
-
-              <div class="separator">
-                <p class="change_link">New to site?
-                  <a href="<?= router::label('#'); ?>signup" class="to_register"> Create Account </a>
-                </p>
-
-                <div class="clearfix"></div>
-                <br />
-
-                <div>
-
-                  <!-- DISCOVERY START BLOCK : LOGIN_COPYRIGHT -->
-
-                  <h1><i class="fa fa-paw"></i> Gentelella Alela!</h1>
-                  <p>©2016 All Rights Reserved. Gentelella Alela! is a Bootstrap 3 template. Privacy and Terms</p>
-                
-                  <!-- DISCOVERY END BLOCK -->
-
-                </div>
-              </div>
-            </form>
+            <?php
+                router::part(new controllers(LOGIN_LOGIN_CONTENT));
+            ?>
 
             <!-- DISCOVERY END BLOCK -->
 
@@ -91,43 +48,9 @@
 
             <!-- DISCOVERY START BLOCK : LOGIN_REGISTER_CONTENT -->
 
-            <form>
-              <h1>Create Account</h1>
-              <div>
-                <input type="text" class="form-control" placeholder="Username" required="" />
-              </div>
-              <div>
-                <input type="email" class="form-control" placeholder="Email" required="" />
-              </div>
-              <div>
-                <input type="password" class="form-control" placeholder="Password" required="" />
-              </div>
-              <div>
-                <a class="btn btn-default submit" href="index.html">Submit</a>
-              </div>
-
-              <div class="clearfix"></div>
-
-              <div class="separator">
-                <p class="change_link">Already a member ?
-                  <a href="<?= router::label('#'); ?>signin" class="to_register"> Log in </a>
-                </p>
-
-                <div class="clearfix"></div>
-                <br />
-
-                <div>
-
-                  <!-- DISCOVERY START BLOCK : LOGIN_COPYRIGHT -->
-
-                  <h1><i class="fa fa-paw"></i> Gentelella Alela!</h1>
-                  <p>©2016 All Rights Reserved. Gentelella Alela! is a Bootstrap 3 template. Privacy and Terms</p>
-
-                  <!-- DISCOVERY END BLOCK -->
-
-                </div>
-              </div>
-            </form>
+            <?php
+                router::part(new controllers(LOGIN_REGISTER_CONTENT));
+            ?>
 
             <!-- DISCOVERY END BLOCK -->
 
