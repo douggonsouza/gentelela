@@ -10,5 +10,4 @@ return array(
     'douggonsouza\\permission\\' => array($vendorDir . '/douggonsouza/permission/src'),
     'douggonsouza\\language\\' => array($vendorDir . '/douggonsouza/language/src'),
     'douggonsouza\\gentelela\\' => array($baseDir . '/src'),
-    'douggonsouza\\alerts\\' => array($vendorDir . '/douggonsouza/alerts/src'),
 );

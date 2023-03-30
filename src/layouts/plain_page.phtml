@@ -1,7 +1,7 @@
 <?php 
     use douggonsouza\routes\router;
-    use douggonsouza\gentelela\assets\assets;
     use douggonsouza\mvc\control\controllers;
+    use douggonsouza\gentelela\controls\alert;
 ?>
 <!DOCTYPE html>
 <html lang="pt-br">
@@ -15,10 +15,10 @@
 
     <!-- DISCOVERY END BLOCK -->
 
-    <!-- DISCOVERY START BLOCK : PLAIN_PAGE_CSS -->
+    <!-- DISCOVERY START BLOCK : CSS -->
 
     <?php
-        router::part(new controllers(PLAIN_PAGE_CSS));
+        router::part(new controllers(CSS));
     ?>
 
     <!-- DISCOVERY END BLOCK -->
@@ -128,6 +128,14 @@
 
             <div class="clearfix"></div>
 
+              <!-- DISCOVERY START BLOCK : ALERTS -->
+
+              <?php
+                router::part(new alert(ALERTS));
+              ?>
+
+              <!-- DISCOVERY END BLOCK -->
+
             <div class="row">
               <div class="col-md-12 col-sm-12  ">
                 <div class="x_panel">
@@ -183,10 +191,10 @@
       </div>
     </div>
 
-    <!-- DISCOVERY START BLOCK : PLAIN_PAGE_JS -->
+    <!-- DISCOVERY START BLOCK : JS -->
 
     <?php
-        router::part(new controllers(PLAIN_PAGE_JS));
+        router::part(new controllers(JS));
     ?>
 
     <!-- DISCOVERY END BLOCK -->

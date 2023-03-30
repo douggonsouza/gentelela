@@ -28,19 +28,8 @@ class alerts implements alertsInterface
         self::BADGE_DARK       => 'alert-dark'
     );
 
-    static public $clear = true;
-    static public $name;
-    
-    /**
-     * __construct - Evanto construtor da classe
-     *
-     * @param  string $name
-     * @return void
-     */
-    public function __construct(string $name)
-    {
-        $this->setName($name);
-    }
+    static public $clear = false;
+    static public $name = 'DouggS_Alerts';
 
     /**
      * Busca pela mensagem de alerta na sessão
@@ -78,12 +67,8 @@ class alerts implements alertsInterface
     /**
      * Expõe template para do alerta conforme o layout
      * 
-     * <div class="sufee-alert alert with-close alert-primary alert-dismissible fade show">
-     * 		You successfully read this important alert.
-     * 		<button type="button" class="close" data-dismiss="alert" aria-label="Close">
-     * 		<span aria-hidden="true">&times;</span></button>
-     * 	</div>
      *
+     * exemplo de mensagem: <strong>Holy guacamole!</strong> Best check yo self, you\'re not looking too good.
      * @return void
      */
     public static function template(string $message, string $badge = self::BADGE_SUCCESS)
@@ -92,12 +77,12 @@ class alerts implements alertsInterface
             return null;
         }
 
-        return sprintf('<div class="sufee-alert alert with-close %1$s alert-dismissible fade show">
-             %2$s
-            <button type="button" class="close" data-dismiss="alert" aria-label="Close">
-                <span aria-hidden="true">&times;</span>
-            </button>
-        </div>',
+        // exemplo de mensagem: <strong>Holy guacamole!</strong> Best check yo self, you\'re not looking too good.
+        return sprintf('<div class="alert %1$s alert-dismissible " role="alert">
+            <button type="button" class="close" data-dismiss="alert" aria-label="Close"><span aria-hidden="true">×</span></button>
+            %2$s
+        </div>
+        ',
         self::LABEL_BADGE[$badge],
         $message
         );
@@ -148,9 +133,8 @@ class alerts implements alertsInterface
      * @param  mixed $clear
      * @return void
      */
-    static final public function clear($clear = null)
+    static final public function clear()
     {
-        self::setClear($clear);
         if(self::getClear()){
             $_SESSION[self::getName()] = array();
         }
@@ -186,14 +170,6 @@ class alerts implements alertsInterface
         if(isset($clear)){
             self::$clear = $clear;
         }
-    }
-
-    /**
-     * Evento destrutor da classe
-     */
-    public function __destruct()
-    {
-        self::clear();
     }
 
     /**

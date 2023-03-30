@@ -4,45 +4,8 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "5d9162811ee9428084a60ff8530402f6",
+    "content-hash": "e34a24017cae66b9cd5feebd632723cf",
     "packages": [
-        {
-            "name": "douggonsouza/alerts",
-            "version": "v1.0.6",
-            "source": {
-                "type": "git",
-                "url": "https://github.com/douggonsouza/alerts.git",
-                "reference": "7702732b2dd53e757c4167711648f38b87d558ca"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://api.github.com/repos/douggonsouza/alerts/zipball/7702732b2dd53e757c4167711648f38b87d558ca",
-                "reference": "7702732b2dd53e757c4167711648f38b87d558ca",
-                "shasum": ""
-            },
-            "type": "library",
-            "autoload": {
-                "psr-4": {
-                    "douggonsouza\\alerts\\": "src/"
-                }
-            },
-            "notification-url": "https://packagist.org/downloads/",
-            "license": [
-                "MIT"
-            ],
-            "authors": [
-                {
-                    "name": "Douglas Gonçalves de Souza",
-                    "email": "douggonsouza@gmail.com"
-                }
-            ],
-            "description": "Módulo de alertas do framework Heartwood",
-            "support": {
-                "issues": "https://github.com/douggonsouza/alerts/issues",
-                "source": "https://github.com/douggonsouza/alerts/tree/v1.0.6"
-            },
-            "time": "2022-08-17T11:46:09+00:00"
-        },
         {
             "name": "douggonsouza/language",
             "version": "v1.0.5",
@@ -82,16 +45,16 @@
         },
         {
             "name": "douggonsouza/permission",
-            "version": "v1.0.4",
+            "version": "v1.0.5",
             "source": {
                 "type": "git",
                 "url": "https://github.com/douggonsouza/permission.git",
-                "reference": "c1a1237213662dcf9bbd73f5972438218640a524"
+                "reference": "9d9b4911734f53d9e7a617b78135e6e52a1de3a4"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/douggonsouza/permission/zipball/c1a1237213662dcf9bbd73f5972438218640a524",
-                "reference": "c1a1237213662dcf9bbd73f5972438218640a524",
+                "url": "https://api.github.com/repos/douggonsouza/permission/zipball/9d9b4911734f53d9e7a617b78135e6e52a1de3a4",
+                "reference": "9d9b4911734f53d9e7a617b78135e6e52a1de3a4",
                 "shasum": ""
             },
             "type": "library",
@@ -113,9 +76,9 @@
             "description": "Coleção de permissões para papeis de usuários",
             "support": {
                 "issues": "https://github.com/douggonsouza/permission/issues",
-                "source": "https://github.com/douggonsouza/permission/tree/v1.0.4"
+                "source": "https://github.com/douggonsouza/permission/tree/v1.0.5"
             },
-            "time": "2023-03-10T11:27:21+00:00"
+            "time": "2023-03-30T11:59:43+00:00"
         },
         {
             "name": "douggonsouza/propertys",

@@ -7,8 +7,6 @@ $baseDir = dirname($vendorDir);
 
 return array(
     'Composer\\InstalledVersions' => $vendorDir . '/composer/InstalledVersions.php',
-    'douggonsouza\\alerts\\alerts' => $vendorDir . '/douggonsouza/alerts/src/alerts.php',
-    'douggonsouza\\alerts\\alertsInterface' => $vendorDir . '/douggonsouza/alerts/src/alertsInterface.php',
     'douggonsouza\\gentelela\\alerts' => $baseDir . '/src/alerts.php',
     'douggonsouza\\gentelela\\alertsInterface' => $baseDir . '/src/alertsInterface.php',
     'douggonsouza\\gentelela\\assets\\assets' => $baseDir . '/src/assets/assets.php',
@@ -16,6 +14,7 @@ return array(
     'douggonsouza\\gentelela\\benchmarck' => $baseDir . '/src/benchmarck.php',
     'douggonsouza\\gentelela\\benchmarckInterface' => $baseDir . '/src/benchmarckInterface.php',
     'douggonsouza\\gentelela\\blocks\\blocks' => $baseDir . '/src/blocks/blocks.php',
+    'douggonsouza\\gentelela\\controls\\alert' => $baseDir . '/src/controls/alert.php',
     'douggonsouza\\gentelela\\identify' => $baseDir . '/src/identify.php',
     'douggonsouza\\language\\language' => $vendorDir . '/douggonsouza/language/src/language.php',
     'douggonsouza\\language\\languageInterface' => $vendorDir . '/douggonsouza/language/src/languageInterface.php',
@@ -23,6 +22,7 @@ return array(
     'douggonsouza\\permission\\controls\\papers' => $vendorDir . '/douggonsouza/permission/src/controls/papers.php',
     'douggonsouza\\permission\\controls\\permissions' => $vendorDir . '/douggonsouza/permission/src/controls/permissions.php',
     'douggonsouza\\permission\\controls\\permissions_types' => $vendorDir . '/douggonsouza/permission/src/controls/permissions_types.php',
+    'douggonsouza\\permission\\controls\\sidebar' => $vendorDir . '/douggonsouza/permission/src/controls/sidebar.php',
     'douggonsouza\\permission\\models\\menu' => $vendorDir . '/douggonsouza/permission/src/models/menu.php',
     'douggonsouza\\permission\\models\\paper' => $vendorDir . '/douggonsouza/permission/src/models/paper.php',
     'douggonsouza\\permission\\models\\permission' => $vendorDir . '/douggonsouza/permission/src/models/permission.php',

@@ -1,10 +1,33 @@
 <?php 
     use douggonsouza\routes\router;
-    use douggonsouza\gentelela\assets\assets;
 ?>
               <div class="menu_section">
                 <h3>General</h3>
                 <ul class="nav side-menu">
+                  <?php
+                    if(isset($pages)){
+                      $mnName = null;
+                      foreach($pages as $page){
+                        $li = '';
+                        if($page['mn_name'] != $mnName && $mnName != null){
+                          $li = '</ul>
+                          </li>
+                          <li><a><i class="'. router::label($page['mn_icon']).'"></i> ' . router::label($page['mn_name']) . ' <span class="fa fa-chevron-down"></span></a>
+                          <ul class="nav child_menu">';
+                        }
+                        if($mnName == null){
+                          $li = '<li><a><i class="'. router::label($page['mn_icon']).'"></i> ' . router::label($page['mn_name']) . ' <span class="fa fa-chevron-down"></span></a>
+                          <ul class="nav child_menu">';
+                        }
+                        echo($li);                  
+                        echo('<li><a href="'. router::getUsages()->getHost() . router::label($page['url']) . '">' . router::label($page['p_name']) . '</a></li>');
+                        $mnName = $page['mn_name'];
+                      }
+                      echo('</ul>
+                        </li>
+                      ');
+                    }
+                  ?>
                   <li><a><i class="fa fa-home"></i> Home <span class="fa fa-chevron-down"></span></a>
                     <ul class="nav child_menu">
                       <li><a href="<?= router::label('#'); ?>">Dashboard</a></li>

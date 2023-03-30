@@ -13,7 +13,6 @@ class ComposerStaticInit174f4cea62571bd2affc3a54a21e306d
             'douggonsouza\\permission\\' => 24,
             'douggonsouza\\language\\' => 22,
             'douggonsouza\\gentelela\\' => 23,
-            'douggonsouza\\alerts\\' => 20,
         ),
     );
 
@@ -34,16 +33,10 @@ class ComposerStaticInit174f4cea62571bd2affc3a54a21e306d
         array (
             0 => __DIR__ . '/../..' . '/src',
         ),
-        'douggonsouza\\alerts\\' => 
-        array (
-            0 => __DIR__ . '/..' . '/douggonsouza/alerts/src',
-        ),
     );
 
     public static $classMap = array (
         'Composer\\InstalledVersions' => __DIR__ . '/..' . '/composer/InstalledVersions.php',
-        'douggonsouza\\alerts\\alerts' => __DIR__ . '/..' . '/douggonsouza/alerts/src/alerts.php',
-        'douggonsouza\\alerts\\alertsInterface' => __DIR__ . '/..' . '/douggonsouza/alerts/src/alertsInterface.php',
         'douggonsouza\\gentelela\\alerts' => __DIR__ . '/../..' . '/src/alerts.php',
         'douggonsouza\\gentelela\\alertsInterface' => __DIR__ . '/../..' . '/src/alertsInterface.php',
         'douggonsouza\\gentelela\\assets\\assets' => __DIR__ . '/../..' . '/src/assets/assets.php',
@@ -51,6 +44,7 @@ class ComposerStaticInit174f4cea62571bd2affc3a54a21e306d
         'douggonsouza\\gentelela\\benchmarck' => __DIR__ . '/../..' . '/src/benchmarck.php',
         'douggonsouza\\gentelela\\benchmarckInterface' => __DIR__ . '/../..' . '/src/benchmarckInterface.php',
         'douggonsouza\\gentelela\\blocks\\blocks' => __DIR__ . '/../..' . '/src/blocks/blocks.php',
+        'douggonsouza\\gentelela\\controls\\alert' => __DIR__ . '/../..' . '/src/controls/alert.php',
         'douggonsouza\\gentelela\\identify' => __DIR__ . '/../..' . '/src/identify.php',
         'douggonsouza\\language\\language' => __DIR__ . '/..' . '/douggonsouza/language/src/language.php',
         'douggonsouza\\language\\languageInterface' => __DIR__ . '/..' . '/douggonsouza/language/src/languageInterface.php',
@@ -58,6 +52,7 @@ class ComposerStaticInit174f4cea62571bd2affc3a54a21e306d
         'douggonsouza\\permission\\controls\\papers' => __DIR__ . '/..' . '/douggonsouza/permission/src/controls/papers.php',
         'douggonsouza\\permission\\controls\\permissions' => __DIR__ . '/..' . '/douggonsouza/permission/src/controls/permissions.php',
         'douggonsouza\\permission\\controls\\permissions_types' => __DIR__ . '/..' . '/douggonsouza/permission/src/controls/permissions_types.php',
+        'douggonsouza\\permission\\controls\\sidebar' => __DIR__ . '/..' . '/douggonsouza/permission/src/controls/sidebar.php',
         'douggonsouza\\permission\\models\\menu' => __DIR__ . '/..' . '/douggonsouza/permission/src/models/menu.php',
         'douggonsouza\\permission\\models\\paper' => __DIR__ . '/..' . '/douggonsouza/permission/src/models/paper.php',
         'douggonsouza\\permission\\models\\permission' => __DIR__ . '/..' . '/douggonsouza/permission/src/models/permission.php',

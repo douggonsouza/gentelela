@@ -1,6 +1,8 @@
 <?php 
     use douggonsouza\routes\router;
     use douggonsouza\mvc\control\controllers;
+    use douggonsouza\discovery\controls\login;
+    use douggonsouza\gentelela\controls\alert;
 ?>
 <!DOCTYPE html>
 <html lang="pt-br">
@@ -14,10 +16,10 @@
 
     <!-- DISCOVERY END BLOCK -->
 
-    <!-- DISCOVERY START BLOCK : LOGIN_CSS -->
+    <!-- DISCOVERY START BLOCK : CSS -->
 
     <?php
-        router::part(new controllers(LOGIN_CSS));
+        router::part(new controllers(CSS));
     ?>
 
     <!-- DISCOVERY END BLOCK -->
@@ -25,10 +27,22 @@
 
   <body class="login">
     <div>
+
+      <!-- DISCOVERY START BLOCK : ALERTS -->
+
+      <?php
+          router::part(new alert(ALERTS));
+        ?>
+
+        <!-- DISCOVERY END BLOCK -->
+
+    </div>
+    <div>
       <a class="hiddenanchor" id="signup"></a>
       <a class="hiddenanchor" id="signin"></a>
 
       <div class="login_wrapper">
+
         <div class="animate form login_form">
           <section class="login_content">
 
@@ -39,6 +53,7 @@
             ?>
 
             <!-- DISCOVERY END BLOCK -->
+
 
           </section>
         </div>
@@ -58,5 +73,14 @@
         </div>
       </div>
     </div>
+
+    <!-- DISCOVERY START BLOCK : JS -->
+
+    <?php
+        router::part(new controllers(JS));
+    ?>
+
+    <!-- DISCOVERY END BLOCK -->
+
   </body>
 </html>

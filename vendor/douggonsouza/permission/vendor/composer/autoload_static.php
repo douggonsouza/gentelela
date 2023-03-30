@@ -26,6 +26,7 @@ class ComposerStaticInit1a16137d816b554aff807e43346d2e71
         'douggonsouza\\permission\\controls\\papers' => __DIR__ . '/../..' . '/src/controls/papers.php',
         'douggonsouza\\permission\\controls\\permissions' => __DIR__ . '/../..' . '/src/controls/permissions.php',
         'douggonsouza\\permission\\controls\\permissions_types' => __DIR__ . '/../..' . '/src/controls/permissions_types.php',
+        'douggonsouza\\permission\\controls\\sidebar' => __DIR__ . '/../..' . '/src/controls/sidebar.php',
         'douggonsouza\\permission\\models\\menu' => __DIR__ . '/../..' . '/src/models/menu.php',
         'douggonsouza\\permission\\models\\paper' => __DIR__ . '/../..' . '/src/models/paper.php',
         'douggonsouza\\permission\\models\\permission' => __DIR__ . '/../..' . '/src/models/permission.php',

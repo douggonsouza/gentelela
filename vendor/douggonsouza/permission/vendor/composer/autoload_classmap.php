@@ -11,6 +11,7 @@ return array(
     'douggonsouza\\permission\\controls\\papers' => $baseDir . '/src/controls/papers.php',
     'douggonsouza\\permission\\controls\\permissions' => $baseDir . '/src/controls/permissions.php',
     'douggonsouza\\permission\\controls\\permissions_types' => $baseDir . '/src/controls/permissions_types.php',
+    'douggonsouza\\permission\\controls\\sidebar' => $baseDir . '/src/controls/sidebar.php',
     'douggonsouza\\permission\\models\\menu' => $baseDir . '/src/models/menu.php',
     'douggonsouza\\permission\\models\\paper' => $baseDir . '/src/models/paper.php',
     'douggonsouza\\permission\\models\\permission' => $baseDir . '/src/models/permission.php',

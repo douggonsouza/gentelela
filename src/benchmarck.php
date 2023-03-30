@@ -14,7 +14,7 @@ use douggonsouza\gentelela\alertsInterface;
 
 final class benchmarck implements benchmarckInterface
 {
-    const NAME = 'DouggSDashboard';
+    const NAME = 'SessionDouggS';
 
     // BADGE
     const BADGE_PRIMARY    = 'Primary';
@@ -34,9 +34,7 @@ final class benchmarck implements benchmarckInterface
     public function __construct(languageInterface $language)
     {
         $this->setLanguage($language);
-        $this->setAlerts(new alerts(self::NAME .'_alerts'));
-        // include templates
-        include_once __DIR__. '/templates.php';
+        $this->setAlerts(new alerts());
     }
 
     /**
@@ -185,6 +183,10 @@ final class benchmarck implements benchmarckInterface
      */ 
     public function getAlerts()
     {
+        if(!isset($this->alerts)){
+            $this->setAlerts(new alerts());
+        }
+
         return $this->alerts;
     }
 
