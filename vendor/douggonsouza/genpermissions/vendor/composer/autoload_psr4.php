@@ -6,5 +6,5 @@ $vendorDir = dirname(__DIR__);
 $baseDir = dirname($vendorDir);
 
 return array(
-    'douggonsouza\\permission\\' => array($baseDir . '/src'),
+    'douggonsouza\\genpermissions\\' => array($baseDir . '/src'),
 );

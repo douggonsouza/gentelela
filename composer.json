@@ -17,7 +17,8 @@
     "minimum-stability": "dev",
     "require": {
         "douggonsouza/propertys": "^1.0.0",
-        "douggonsouza/permission": "^1.0.0",
-        "douggonsouza/language": "^1.0.0"
+        "douggonsouza/language": "^1.0.0",
+        "douggonsouza/genpermissions": "^1.0.0",
+        "douggonsouza/genalerts": "^1.0.0"
     }
 }

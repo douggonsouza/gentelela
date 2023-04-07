@@ -1,6 +1,86 @@
 {
     "packages": [
         {
+            "name": "douggonsouza/genalerts",
+            "version": "1.0.1",
+            "version_normalized": "1.0.1.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/douggonsouza/genalerts.git",
+                "reference": "bf4371b763592695e34fdadfa17381fe8718fb91"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/douggonsouza/genalerts/zipball/bf4371b763592695e34fdadfa17381fe8718fb91",
+                "reference": "bf4371b763592695e34fdadfa17381fe8718fb91",
+                "shasum": ""
+            },
+            "time": "2023-04-07T19:24:41+00:00",
+            "type": "library",
+            "installation-source": "dist",
+            "autoload": {
+                "psr-4": {
+                    "douggonsouza\\genalerts\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Douglas Gonçalves de Souza",
+                    "email": "douggonsouza@gmail.com"
+                }
+            ],
+            "description": "MVC de alertas para o template Gentelela",
+            "support": {
+                "issues": "https://github.com/douggonsouza/genalerts/issues",
+                "source": "https://github.com/douggonsouza/genalerts/tree/1.0.1"
+            },
+            "install-path": "../douggonsouza/genalerts"
+        },
+        {
+            "name": "douggonsouza/genpermissions",
+            "version": "1.0.1",
+            "version_normalized": "1.0.1.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/douggonsouza/genpermissions.git",
+                "reference": "c64dddd216d4cf9525cb1e5175b4c6e801d42902"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/douggonsouza/genpermissions/zipball/c64dddd216d4cf9525cb1e5175b4c6e801d42902",
+                "reference": "c64dddd216d4cf9525cb1e5175b4c6e801d42902",
+                "shasum": ""
+            },
+            "time": "2023-04-07T19:25:57+00:00",
+            "type": "library",
+            "installation-source": "dist",
+            "autoload": {
+                "psr-4": {
+                    "douggonsouza\\genpermissions\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Douglas Gonçalves de Souza",
+                    "email": "douggonsouza@gmail.com"
+                }
+            ],
+            "description": "MVC de permissões para o template Gentelela",
+            "support": {
+                "issues": "https://github.com/douggonsouza/genpermissions/issues",
+                "source": "https://github.com/douggonsouza/genpermissions/tree/1.0.1"
+            },
+            "install-path": "../douggonsouza/genpermissions"
+        },
+        {
             "name": "douggonsouza/language",
             "version": "v1.0.5",
             "version_normalized": "1.0.5.0",
@@ -39,46 +119,6 @@
                 "source": "https://github.com/douggonsouza/language/tree/v1.0.5"
             },
             "install-path": "../douggonsouza/language"
-        },
-        {
-            "name": "douggonsouza/permission",
-            "version": "v1.0.5",
-            "version_normalized": "1.0.5.0",
-            "source": {
-                "type": "git",
-                "url": "https://github.com/douggonsouza/permission.git",
-                "reference": "9d9b4911734f53d9e7a617b78135e6e52a1de3a4"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://api.github.com/repos/douggonsouza/permission/zipball/9d9b4911734f53d9e7a617b78135e6e52a1de3a4",
-                "reference": "9d9b4911734f53d9e7a617b78135e6e52a1de3a4",
-                "shasum": ""
-            },
-            "time": "2023-03-30T11:59:43+00:00",
-            "type": "library",
-            "installation-source": "dist",
-            "autoload": {
-                "psr-4": {
-                    "douggonsouza\\permission\\": "src/"
-                }
-            },
-            "notification-url": "https://packagist.org/downloads/",
-            "license": [
-                "MIT"
-            ],
-            "authors": [
-                {
-                    "name": "Dougla G. de Souza",
-                    "email": "douggonsouza@gmail.com"
-                }
-            ],
-            "description": "Coleção de permissões para papeis de usuários",
-            "support": {
-                "issues": "https://github.com/douggonsouza/permission/issues",
-                "source": "https://github.com/douggonsouza/permission/tree/v1.0.5"
-            },
-            "install-path": "../douggonsouza/permission"
         },
         {
             "name": "douggonsouza/propertys",
