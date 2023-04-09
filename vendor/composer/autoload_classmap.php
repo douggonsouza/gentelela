@@ -28,6 +28,7 @@ return array(
     'douggonsouza\\gentelela\\blocks\\blocks' => $baseDir . '/src/blocks/blocks.php',
     'douggonsouza\\gentelela\\controls\\alert' => $baseDir . '/src/controls/alert.php',
     'douggonsouza\\gentelela\\identify' => $baseDir . '/src/identify.php',
+    'douggonsouza\\gentelela\\layouts\\layouts' => $baseDir . '/src/layouts/layouts.php',
     'douggonsouza\\language\\language' => $vendorDir . '/douggonsouza/language/src/language.php',
     'douggonsouza\\language\\languageInterface' => $vendorDir . '/douggonsouza/language/src/languageInterface.php',
     'douggonsouza\\propertys\\propertys' => $vendorDir . '/douggonsouza/propertys/src/propertys.php',

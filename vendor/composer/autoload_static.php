@@ -63,6 +63,7 @@ class ComposerStaticInit174f4cea62571bd2affc3a54a21e306d
         'douggonsouza\\gentelela\\blocks\\blocks' => __DIR__ . '/../..' . '/src/blocks/blocks.php',
         'douggonsouza\\gentelela\\controls\\alert' => __DIR__ . '/../..' . '/src/controls/alert.php',
         'douggonsouza\\gentelela\\identify' => __DIR__ . '/../..' . '/src/identify.php',
+        'douggonsouza\\gentelela\\layouts\\layouts' => __DIR__ . '/../..' . '/src/layouts/layouts.php',
         'douggonsouza\\language\\language' => __DIR__ . '/..' . '/douggonsouza/language/src/language.php',
         'douggonsouza\\language\\languageInterface' => __DIR__ . '/..' . '/douggonsouza/language/src/languageInterface.php',
         'douggonsouza\\propertys\\propertys' => __DIR__ . '/..' . '/douggonsouza/propertys/src/propertys.php',
