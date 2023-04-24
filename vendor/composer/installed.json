@@ -42,20 +42,20 @@
         },
         {
             "name": "douggonsouza/genpermissions",
-            "version": "1.0.2",
-            "version_normalized": "1.0.2.0",
+            "version": "1.0.3",
+            "version_normalized": "1.0.3.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/douggonsouza/genpermissions.git",
-                "reference": "8fb823ba9ab4eff89fea1bec6f5cd18bb50b4af9"
+                "reference": "b7905afa8a055b999573c1a1d60989fc5dd83043"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/douggonsouza/genpermissions/zipball/8fb823ba9ab4eff89fea1bec6f5cd18bb50b4af9",
-                "reference": "8fb823ba9ab4eff89fea1bec6f5cd18bb50b4af9",
+                "url": "https://api.github.com/repos/douggonsouza/genpermissions/zipball/b7905afa8a055b999573c1a1d60989fc5dd83043",
+                "reference": "b7905afa8a055b999573c1a1d60989fc5dd83043",
                 "shasum": ""
             },
-            "time": "2023-04-07T23:41:57+00:00",
+            "time": "2023-04-24T11:38:39+00:00",
             "type": "library",
             "installation-source": "dist",
             "autoload": {
@@ -76,7 +76,7 @@
             "description": "MVC de permissões para o template Gentelela",
             "support": {
                 "issues": "https://github.com/douggonsouza/genpermissions/issues",
-                "source": "https://github.com/douggonsouza/genpermissions/tree/1.0.2"
+                "source": "https://github.com/douggonsouza/genpermissions/tree/1.0.3"
             },
             "install-path": "../douggonsouza/genpermissions"
         },

@@ -1,0 +1,111 @@
+<?php 
+    use douggonsouza\routes\router;
+    use douggonsouza\gentelela\assets\assets;
+?>
+                        <div class="col-md-12 ">
+							<div class="x_panel">
+								<div class="x_title">
+									<h2><?= router::label('PERMISSÃO'); ?> <small></small></h2>
+									<ul class="nav navbar-right panel_toolbox">
+										<li><a class="collapse-link"><i class="fa fa-chevron-up"></i></a>
+										</li>
+										<li class="dropdown">
+											<a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false"><i class="fa fa-wrench"></i></a>
+											<div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+												<a class="dropdown-item" href="#">Settings 1</a>
+												<a class="dropdown-item" href="#">Settings 2</a>
+											</div>
+										</li>
+										<li><a class="close-link"><i class="fa fa-close"></i></a>
+										</li>
+									</ul>
+									<div class="clearfix"></div>
+								</div>
+								<div class="x_content">
+									<br />
+									<form class="form-horizontal form-label-left" action="" method="POST" enctype="multipart/form-data">
+
+										<div class="form-group row">
+											<label class="control-label col-md-3 col-sm-3 "><?= router::label('Tipo de Permissão'); ?></label>
+											<div class="col-md-9 col-sm-9 ">
+												<select name="<?= router::label('permission_type_id'); ?>" class="form-control">
+                                                    <option value=""></option>
+                                                    <?php
+														if(isset($optionsPermissionType)){
+															foreach($optionsPermissionType as $option){
+																print('<option value="' . $option['value'] . '">'. $option['label'] .'</option>');
+															}
+														}
+                                                    ?>
+												</select>
+											</div>
+										</div>
+										<div class="form-group row">
+											<label class="control-label col-md-3 col-sm-3 "><?= router::label('Papel'); ?></label>
+											<div class="col-md-9 col-sm-9 ">
+												<select name="<?= router::label('paper_id'); ?>" class="form-control">
+                                                    <option value=""></option>
+                                                    <?php
+														if(isset($optionsPaper)){
+															foreach($optionsPaper as $option){
+																print('<option value="' . $option['value'] . '">'. $option['label'] .'</option>');
+															}
+														}
+                                                    ?>
+												</select>
+											</div>
+										</div>
+										<div class="form-group row ">
+											<label class="control-label col-md-3 col-sm-3 "><?= router::label('Código'); ?></label>
+											<div class="col-md-9 col-sm-9 ">
+												<input type="text" name="<?= router::label('code'); ?>" class="form-control" placeholder="<?= router::label('Código'); ?>">
+											</div>
+										</div>
+										<div class="form-group row ">
+											<label class="control-label col-md-3 col-sm-3 "><?= router::label('Nome'); ?></label>
+											<div class="col-md-9 col-sm-9 ">
+												<input type="text" name="<?= router::label('name'); ?>" class="form-control" placeholder="<?= router::label('Nome'); ?>">
+											</div>
+										</div>
+										<div class="form-group row ">
+											<label class="control-label col-md-3 col-sm-3 "><?= router::label('Icone'); ?></label>
+											<div class="col-md-9 col-sm-9 ">
+												<input type="text" name="<?= router::label('icon'); ?>" class="form-control" placeholder="<?= router::label('Icone'); ?>">
+											</div>
+										</div>
+										<div class="form-group row">
+											<label class="control-label col-md-3 col-sm-3 "><?= router::label('Menu'); ?></label>
+											<div class="col-md-9 col-sm-9 ">
+												<select name="<?= router::label('menu_id'); ?>" class="form-control">
+                                                    <option value=""></option>
+                                                    <?php
+														if(isset($optionsMenu)){
+															foreach($optionsMenu as $option){
+																print('<option value="' . $option['value'] . '">'. $option['label'] .'</option>');
+															}
+														}
+                                                    ?>
+												</select>
+											</div>
+										</div>
+										<div class="form-group row ">
+											<label class="control-label col-md-3 col-sm-3 "><?= router::label('URL'); ?></label>
+											<div class="col-md-9 col-sm-9 ">
+												<input type="text" name="<?= router::label('url'); ?>" class="form-control" placeholder="<?= router::label('URL'); ?>">
+											</div>
+										</div>
+
+										<div class="ln_solid"></div>
+										<div class="form-group">
+											<div class="col-md-9 col-sm-9  offset-md-3">
+												<input type="hidden" class="form-control" name="pub_key" value="cGVybWlzc2lvbiBjb250cm9sbGVy" />
+												<button type="button" class="btn btn-primary">Cancel</button>
+												<button type="reset" class="btn btn-primary">Reset</button>
+												<button type="submit" class="btn btn-success">Submit</button>
+											</div>
+										</div>
+
+									</form>
+								</div>
+							</div>
+						</div>

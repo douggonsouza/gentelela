@@ -3,31 +3,40 @@
     use douggonsouza\gentelela\assets\assets;
     use douggonsouza\mvc\control\controllers;
 ?>
-            <form>
-              <h1>Create Account</h1>
+            <form action="<?= router::getUsages()->getHost() . '/register'; ?>" method="POST" enctype="multipart/form-data">
+              <h1><?= router::label('Nova Conta') ?></h1>
               <div>
-                <input type="text" class="form-control" placeholder="Username" required="" />
+                <input type="text" class="form-control" name="name" placeholder="<?= router::label('Nome'); ?>" required="" />
               </div>
               <div>
-                <input type="email" class="form-control" placeholder="Email" required="" />
+                <input type="text" class="form-control" name="document" placeholder="<?= router::label('CPF ou CNPJ'); ?>" required="" />
               </div>
               <div>
-                <input type="password" class="form-control" placeholder="Password" required="" />
+                <input type="email" class="form-control" name="email" placeholder="<?= router::label('E-mail'); ?>" required="" />
               </div>
               <div>
-                <a class="btn btn-default submit" href="<?= router::label('#') ?>">Submit</a>
+                <input type="password" class="form-control" name="password" placeholder="<?= router::label('Senha'); ?>" required="" />
+              </div>
+              <div>
+                <input type="password" class="form-control" name="confirm_password" placeholder="<?= router::label('Confirma Senha'); ?>" required="" />
+              </div>
+              <div>
+              <input type="hidden" class="form-control" name="paper_id" value="3" />
+                <input type="hidden" class="form-control" name="pub_key" value="cmVnaXN0ZXIgY29udHJvbGxlcg==" />
+                <button type="submit" class="btn btn-round btn-primary"><?= router::label('Enviar'); ?></button>
+                <!-- <a class="btn btn-default submit" href="<?= router::label('#') ?>"><?= router::label('Enviar') ?></a> -->
               </div>
 
               <div class="clearfix"></div>
 
               <div class="separator">
-                <p class="change_link">Already a member ?
-                  <a href="<?= router::label('#signin'); ?>" class="to_register"> Log in </a>
+                <p class="change_link"><?= router::label('Conta já existe?') ?>
+                  <a href="<?= router::label('#signin'); ?>" class="to_register"> <?= router::label('Logar') ?> </a>
                 </p>
 
                 <div class="clearfix"></div>
                 <br />
-
+                
                 <div>
 
                   <!-- DISCOVERY START BLOCK : COPYRIGHT -->
